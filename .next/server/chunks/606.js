@@ -1879,22 +1879,22 @@ const MobileToggleMenu = ()=>{
         setIsMenuOpen(!isMenuOpen); // Toggle mobile menu
     };
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-        className: "jsx-de56f8de7c92256a" + " " + "mobile-menu",
+        className: "jsx-eb005f57ae5752e8" + " " + "mobile-menu",
         children: [
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                 onClick: handleMenuToggle,
-                className: "jsx-de56f8de7c92256a" + " " + "menu-toggle",
+                className: "jsx-eb005f57ae5752e8" + " " + "menu-toggle",
                 children: isMenuOpen ? "X" : /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
-                    className: "jsx-de56f8de7c92256a" + " " + "menu-bars",
+                    className: "jsx-eb005f57ae5752e8" + " " + "menu-bars",
                     children: [
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                            className: "jsx-de56f8de7c92256a"
+                            className: "jsx-eb005f57ae5752e8"
                         }),
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                            className: "jsx-de56f8de7c92256a"
+                            className: "jsx-eb005f57ae5752e8"
                         }),
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                            className: "jsx-de56f8de7c92256a"
+                            className: "jsx-eb005f57ae5752e8"
                         })
                     ]
                 })
@@ -1903,29 +1903,29 @@ const MobileToggleMenu = ()=>{
                 style: {
                     display: isMenuOpen ? "block" : "none"
                 },
-                className: "jsx-de56f8de7c92256a" + " " + "nav_scroll text-center",
+                className: "jsx-eb005f57ae5752e8" + " " + "nav_scroll text-center",
                 children: [
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        className: "jsx-de56f8de7c92256a" + " " + "logo",
+                        className: "jsx-eb005f57ae5752e8" + " " + "logo",
                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_3___default()), {
                             legacyBehavior: true,
                             href: "/",
                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                 title: "Al",
-                                className: "jsx-de56f8de7c92256a" + " " + "logo_img",
+                                className: "jsx-eb005f57ae5752e8" + " " + "logo_img",
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                     src: "assets/images/logo.png",
                                     alt: "logo",
                                     height: 50,
-                                    className: "jsx-de56f8de7c92256a"
+                                    className: "jsx-eb005f57ae5752e8"
                                 })
                             })
                         })
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        className: "jsx-de56f8de7c92256a" + " " + "search-bar",
+                        className: "jsx-eb005f57ae5752e8" + " " + "search-bar",
                         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("form", {
-                            className: "jsx-de56f8de7c92256a",
+                            className: "jsx-eb005f57ae5752e8",
                             children: [
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("input", {
                                     type: "text",
@@ -1933,28 +1933,28 @@ const MobileToggleMenu = ()=>{
                                     style: {
                                         height: "20px"
                                     },
-                                    className: "jsx-de56f8de7c92256a"
+                                    className: "jsx-eb005f57ae5752e8"
                                 }),
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                                     type: "submit",
-                                    className: "jsx-de56f8de7c92256a",
+                                    className: "jsx-eb005f57ae5752e8",
                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
-                                        className: "jsx-de56f8de7c92256a" + " " + "fas fa-search"
+                                        className: "jsx-eb005f57ae5752e8" + " " + "fas fa-search"
                                     })
                                 })
                             ]
                         })
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                        className: "jsx-de56f8de7c92256a" + " " + "menu-item",
+                        className: "jsx-eb005f57ae5752e8" + " " + "menu-item",
                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                             href: "#",
-                            className: "jsx-de56f8de7c92256a",
+                            className: "jsx-eb005f57ae5752e8",
                             children: "Courses"
                         })
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                        className: "jsx-de56f8de7c92256a" + " " + "menu-item",
+                        className: "jsx-eb005f57ae5752e8" + " " + "menu-item",
                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_3___default()), {
                             legacyBehavior: true,
                             href: "/pricing",
@@ -1964,77 +1964,77 @@ const MobileToggleMenu = ()=>{
                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
                         onMouseEnter: handleMouseEnter,
                         onMouseLeave: handleMouseLeave,
-                        className: "jsx-de56f8de7c92256a" + " " + "menu-item dropdown",
+                        className: "jsx-eb005f57ae5752e8" + " " + "menu-item dropdown",
                         children: [
                             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
                                 href: "#",
-                                className: "jsx-de56f8de7c92256a",
+                                className: "jsx-eb005f57ae5752e8",
                                 children: [
                                     "Discover",
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                        className: "jsx-de56f8de7c92256a",
+                                        className: "jsx-eb005f57ae5752e8",
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
-                                            className: "jsx-de56f8de7c92256a" + " " + "fas fa-angle-down"
+                                            className: "jsx-eb005f57ae5752e8" + " " + "fas fa-angle-down"
                                         })
                                     })
                                 ]
                             }),
                             isDropdownOpen && /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
-                                className: "jsx-de56f8de7c92256a" + " " + "dropdown-menu",
+                                className: "jsx-eb005f57ae5752e8" + " " + "dropdown-menu",
                                 children: [
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                        className: "jsx-de56f8de7c92256a",
+                                        className: "jsx-eb005f57ae5752e8",
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                             href: "#",
-                                            className: "jsx-de56f8de7c92256a",
+                                            className: "jsx-eb005f57ae5752e8",
                                             children: "About us"
                                         })
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                        className: "jsx-de56f8de7c92256a",
+                                        className: "jsx-eb005f57ae5752e8",
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                             href: "#",
-                                            className: "jsx-de56f8de7c92256a",
+                                            className: "jsx-eb005f57ae5752e8",
                                             children: "Blog"
                                         })
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                        className: "jsx-de56f8de7c92256a",
+                                        className: "jsx-eb005f57ae5752e8",
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                             href: "#",
-                                            className: "jsx-de56f8de7c92256a",
+                                            className: "jsx-eb005f57ae5752e8",
                                             children: "Teachers"
                                         })
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                        className: "jsx-de56f8de7c92256a",
+                                        className: "jsx-eb005f57ae5752e8",
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                             href: "#",
-                                            className: "jsx-de56f8de7c92256a",
+                                            className: "jsx-eb005f57ae5752e8",
                                             children: "Testimonials"
                                         })
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                        className: "jsx-de56f8de7c92256a",
+                                        className: "jsx-eb005f57ae5752e8",
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                             href: "#",
-                                            className: "jsx-de56f8de7c92256a",
+                                            className: "jsx-eb005f57ae5752e8",
                                             children: "Career"
                                         })
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                        className: "jsx-de56f8de7c92256a",
+                                        className: "jsx-eb005f57ae5752e8",
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                             href: "#",
-                                            className: "jsx-de56f8de7c92256a",
+                                            className: "jsx-eb005f57ae5752e8",
                                             children: "FAQ"
                                         })
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                        className: "jsx-de56f8de7c92256a",
+                                        className: "jsx-eb005f57ae5752e8",
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                             href: "#",
-                                            className: "jsx-de56f8de7c92256a",
+                                            className: "jsx-eb005f57ae5752e8",
                                             children: "Contact Us"
                                         })
                                     })
@@ -2045,8 +2045,8 @@ const MobileToggleMenu = ()=>{
                 ]
             }),
             react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default()), {
-                id: "de56f8de7c92256a",
-                children: '.menu-toggle.jsx-de56f8de7c92256a{cursor:pointer;font-size:24px;display:none}.menu-item.jsx-de56f8de7c92256a{border:1px solid#ccc;-webkit-border-radius:0px;-moz-border-radius:0px;border-radius:0px;padding:10px 20px;margin:5px 0;width:auto;background-color:#f8f8f8;-webkit-transition:background-color.3s ease,box-shadow.3s ease;-moz-transition:background-color.3s ease,box-shadow.3s ease;-o-transition:background-color.3s ease,box-shadow.3s ease;transition:background-color.3s ease,box-shadow.3s ease}.menu-item.jsx-de56f8de7c92256a a.jsx-de56f8de7c92256a{text-decoration:none;color:#333;font-weight:500;font-size:16px}.menu-item.jsx-de56f8de7c92256a:hover{background-color:#eaeaea;-webkit-box-shadow:0 4px 8px rgba(0,0,0,.1);-moz-box-shadow:0 4px 8px rgba(0,0,0,.1);box-shadow:0 4px 8px rgba(0,0,0,.1)}.menu-item.jsx-de56f8de7c92256a a.jsx-de56f8de7c92256a:hover{color:#007bff}.menu-bars.jsx-de56f8de7c92256a{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:5px}.menu-bars.jsx-de56f8de7c92256a span.jsx-de56f8de7c92256a{width:30px;height:3px;background-color:#333}@media(max-width:767px){.menu-toggle.jsx-de56f8de7c92256a{display:block}.nav_scroll.jsx-de56f8de7c92256a{display:none}.nav_scroll.text-center[style*="block"].jsx-de56f8de7c92256a{display:block!important}}@media(min-width:768px){.menu-toggle.jsx-de56f8de7c92256a{display:none}.nav_scroll.jsx-de56f8de7c92256a{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex}}.dropdown-menu.jsx-de56f8de7c92256a{display:none;position:absolute;background-color:#fff;-webkit-box-shadow:0 4px 8px rgba(0,0,0,.1);-moz-box-shadow:0 4px 8px rgba(0,0,0,.1);box-shadow:0 4px 8px rgba(0,0,0,.1);padding:10px;list-style:none}.dropdown.jsx-de56f8de7c92256a:hover .dropdown-menu.jsx-de56f8de7c92256a{display:block}.dropdown-menu.jsx-de56f8de7c92256a li.jsx-de56f8de7c92256a{padding:5px 10px}.dropdown-menu.jsx-de56f8de7c92256a li.jsx-de56f8de7c92256a a.jsx-de56f8de7c92256a{color:#333}.dropdown-menu.jsx-de56f8de7c92256a li.jsx-de56f8de7c92256a a.jsx-de56f8de7c92256a:hover{color:#007bff}'
+                id: "eb005f57ae5752e8",
+                children: '.menu-toggle.jsx-eb005f57ae5752e8{cursor:pointer;font-size:24px;display:none}.a.jsx-eb005f57ae5752e8,i.jsx-eb005f57ae5752e8,cite.jsx-eb005f57ae5752e8,var.jsx-eb005f57ae5752e8,address.jsx-eb005f57ae5752e8,dfn.jsx-eb005f57ae5752e8,ol.jsx-eb005f57ae5752e8,li.jsx-eb005f57ae5752e8,ul.jsx-eb005f57ae5752e8{text-align:left}.menu-item.jsx-eb005f57ae5752e8{border:1px solid#ccc;-webkit-border-radius:0px;-moz-border-radius:0px;border-radius:0px;padding:10px 20px;margin:0px;width:auto;background-color:#f8f8f8;-webkit-transition:background-color.3s ease,box-shadow.3s ease;-moz-transition:background-color.3s ease,box-shadow.3s ease;-o-transition:background-color.3s ease,box-shadow.3s ease;transition:background-color.3s ease,box-shadow.3s ease}.fa-angle-down.jsx-eb005f57ae5752e8:before{margin-left:206px;content:""}.menu-item.jsx-eb005f57ae5752e8 a.jsx-eb005f57ae5752e8{text-decoration:none;color:#333;font-weight:500;font-size:16px}.menu-item.jsx-eb005f57ae5752e8:hover{background-color:#eaeaea;-webkit-box-shadow:0 4px 8px rgba(0,0,0,.1);-moz-box-shadow:0 4px 8px rgba(0,0,0,.1);box-shadow:0 4px 8px rgba(0,0,0,.1)}.menu-item.jsx-eb005f57ae5752e8 a.jsx-eb005f57ae5752e8:hover{color:#007bff}.menu-bars.jsx-eb005f57ae5752e8{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:5px}.menu-bars.jsx-eb005f57ae5752e8 span.jsx-eb005f57ae5752e8{width:30px;height:3px;background-color:#333}@media(max-width:767px){.menu-toggle.jsx-eb005f57ae5752e8{display:block}.nav_scroll.jsx-eb005f57ae5752e8{display:none}.nav_scroll.text-center[style*="block"].jsx-eb005f57ae5752e8{display:block!important}}@media(min-width:768px){.menu-toggle.jsx-eb005f57ae5752e8{display:none}.nav_scroll.jsx-eb005f57ae5752e8{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex}}.dropdown-menu.jsx-eb005f57ae5752e8{display:none;position:absolute;background-color:#fff;-webkit-box-shadow:0 4px 8px rgba(0,0,0,.1);-moz-box-shadow:0 4px 8px rgba(0,0,0,.1);box-shadow:0 4px 8px rgba(0,0,0,.1);padding:10px;list-style:none}.dropdown.jsx-eb005f57ae5752e8:hover .dropdown-menu.jsx-eb005f57ae5752e8{display:block}.dropdown-menu.jsx-eb005f57ae5752e8 li.jsx-eb005f57ae5752e8{padding:5px 10px}.dropdown-menu.jsx-eb005f57ae5752e8 li.jsx-eb005f57ae5752e8 a.jsx-eb005f57ae5752e8{color:#333}.dropdown-menu.jsx-eb005f57ae5752e8 li.jsx-eb005f57ae5752e8 a.jsx-eb005f57ae5752e8:hover{color:#007bff}'
             })
         ]
     });

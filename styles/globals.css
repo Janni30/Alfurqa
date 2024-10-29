@@ -86,3 +86,14 @@ li.monthdate.current_date {
 /* Optional: Add AOS library for additional animations */
 
 
+/* styles/globals.css or a specific CSS file */
+.swiper {
+  width: 100%;
+  height: 100vh; /* Set the height of the slider */
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

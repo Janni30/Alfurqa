@@ -14,8 +14,11 @@ import { Card } from "react-bootstrap";
 import Process from "@/src/components/Process";
 import CTA from "@/src/components/CTA";
 import ProgressBar from "@/src/components/ProgressBar";
-import Testimo from "@/src/components/Testimo";
+import Testimo from "@/src/components/TestimonialComponent";
 import Pprocess from "@/src/components/Pprocess";
+import Banner from "@/src/components/Banner";
+import BannerSlider from "@/src/components/BannerSlider";
+import TestimonialComponent from "@/src/components/TestimonialComponent";
 
 const Index = () => {
   return (
@@ -88,7 +91,9 @@ const Index = () => {
       {/* Start consen feature Area */}
       {/*==================================================*/}
 
+      <br/> <br/>
 
+{/* <Banner /> */}
       <br/>   <br/><br/>
       <div className="container pt-40" data-aos="fade-up">
       <div className="row">
@@ -718,7 +723,7 @@ const Index = () => {
       {/*==================================================*/}
       {/* End consen process Area */}
       {/*==================================================*/}
-<Testimo />
+
  
  
        {/*==================================================*/}
@@ -769,6 +774,7 @@ const Index = () => {
     
  </div>
 </div> */}
+<TestimonialComponent />
 
 <div className="social-media-marketing-services" data-aos="fade-up">
   <div className="container">
@@ -776,10 +782,8 @@ const Index = () => {
     <p className="text-center">A streamlined approach to social media marketing success</p>
   
     <Pprocess />
-    
  </div>
 </div>
-
 
       {/*==================================================*/}
       {/* End consen process Area */}
@@ -1043,13 +1047,16 @@ const Index = () => {
           </div>
         </div>
       </div>
+
+
+    
       {/*==================================================*/}
       {/* End consen Testimonial Area */}
       {/*==================================================*/}
        {/*==================================================*/}
       {/* Start faq Area */}
       {/*==================================================*/}
-      <br/><br/><br/><br/><br/>
+      {/* <br/><br/><br/> */}
       <div className="faq-area" data-aos="fade-up">
         <div className="container">
           <div className="row">
@@ -1132,7 +1139,6 @@ const Index = () => {
           </div>
         </div>
       </div>
-      <br/><br/><br/><br/><br/>
 
       {/*==================================================*/}
       {/* End consen faq Area */}

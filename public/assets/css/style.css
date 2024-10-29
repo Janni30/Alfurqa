@@ -75,7 +75,9 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
   margin: 5px 0;
   background-color: #333;
 }
-
+.menu-bars{
+  gap:0px !important
+}
 .nav_scroll {
   list-style: none;
   padding: 0;
@@ -109,20 +111,20 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
 .search-bar {
   display: inline-block;
   margin-right: 15px;
-  border-radius: 50px 50px 50px 50px; /* Corrected border-radius */
+  border-radius: 50px 50px 50px 50px; 
 
 }
 
 .search-bar form {
   display: flex;
   align-items: center;
-  border: 9px solid #E63946; /* Border with color */
+  border: 9px solid #E63946; 
   padding: 0px;
   margin-top: 23px;
   border-radius: 0 50px 50px 0;
   z-index: 1;
   transition: 0.5s;
-  border: 2px solid #e63946;
+  border: 2px solid #f8f2f3;
 }
 
 .search-bar input {
@@ -2282,7 +2284,7 @@ tbody tr:hover {
 <--  Consen About Area Css -->
 ======================================================**/
 .about-area {
-  background: url(../images/about/about-bg.png);
+  background-color: #06132b;
   background-repeat: no-repeat;
   background-position: center;
   padding: 100px 0 80px;
@@ -2291,7 +2293,7 @@ tbody tr:hover {
   border-radius: 180px 0px 180px 0px;
 }
 .about-area-banner {
-  background: url(../images/about/about-bg.png);
+  background: url(../images/about/about-bg1.png);
   background-repeat: no-repeat;
   background-position: center;
   padding: 100px 0 80px;
@@ -3480,6 +3482,7 @@ p.choose-text1 {
   position: relative;
   z-index: 1;
       border-radius: 100px 0px 100px 0px;
+      height: 650px;
 }
 
 /*testimonial*/
@@ -3488,7 +3491,7 @@ p.choose-text1 {
   transition: all 0.4s ease 0s;
   position: relative;
   margin-top: 10px;
-  text-align: left;
+  text-align: left; 
   z-index: 1;
   border-radius: 3px;
   background: #fff;
@@ -9005,4 +9008,7 @@ p.text-center {
     font-size: 1rem;
   }
 }
+
+
+
 

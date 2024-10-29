@@ -94,16 +94,22 @@ export const MobileToggleMenu = () => {
           display: none; /* Initially hidden */
         }
        
+       .a, i, cite, var, address, dfn, ol, li, ul {
+       text-align: left;
+         }
         .menu-item {
           border: 1px solid #ccc;
           border-radius: 0px;
           padding: 10px 20px;
-          margin: 5px 0;
+          margin: 0px;
           width: auto;
           background-color: #f8f8f8;
           transition: background-color 0.3s ease, box-shadow 0.3s ease;
         }
-
+          .fa-angle-down:before {
+    margin-left: 206px;
+    content: "\f107";
+}
         .menu-item a {
           text-decoration: none;
           color: #333;
