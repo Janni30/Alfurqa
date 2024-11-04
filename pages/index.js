@@ -64,7 +64,10 @@ const Index = () => {
                     <h3> DESIGNING FOR THE FUTURE</h3>
                     <h1>           Welcome to Our Academy
                     </h1>
-                   <p>Mastering Arabic and understanding the Quran demand structured study and consistent effort to deepen your connection </p>
+                   <p>
+Let's Learn together
+Qur'an and Arabic
+Knowledge doesn’t come but you have to go to it </p>
                   </div>
                   <div className="banner-button">
                     <Link legacyBehavior href="/contact">
@@ -101,10 +104,10 @@ const Index = () => {
             <div className="col-lg-7 col-md-6">
               <div className="consen-section-title  pb-50 mb-1">
                 <h5>Find your Path </h5>
-                <h2> We Offering Courses</h2>
+                <h2> “Empower Your Faith </h2>
                 <h2>
                   {" "}
-                  From <span>  </span>
+                  Through Learning” <span>  </span>
                 </h2>
               </div>
             </div>
@@ -152,8 +155,7 @@ const Index = () => {
                   <div className="feature-text11">
                     <p>
                       {" "}
-                      Appropriately enhance principle-cent standards in
-                      platforms. Credibly orch popular services.{" "}
+                      Learn to pronounce Arabic letters with a phonic sound under Tajweed & Makharij rules, using the Noorani Qaida{" "}
                     </p>
                   </div>
                   </div>
@@ -194,15 +196,14 @@ const Index = () => {
                     <div className="feature-text11">
                     <p>
                       {" "}
-                      Appropriately enhance principle-cent standards in
-                      platforms. Credibly orch popular services.{" "}
+                      We offer kids and adults to memorize the whole or part of the Holy Qur’an with a structured program.{" "}
                     </p>
                   </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-4 col-md-6" style={{backgroundImage:''}}>
               <div className="single-feature-box1">
                 <div className="feature-box-inner1">
                   <div className="feature-icon11">
@@ -236,8 +237,7 @@ const Index = () => {
                     <div className="feature-text11">
                     <p>
                       {" "}
-                      Appropriately enhance principle-cent standards in
-                      platforms. Credibly orch popular services.{" "}
+                      Kids will learn to read, write and understand the Arabic language. It will also help with their academic course.{" "}
                     </p>
                   </div>
                   </div>
@@ -287,7 +287,7 @@ const Index = () => {
               <div className="dreamit-icon-title">
                 <h4>
                   {" "}
-                  We are Since <span>2007 to Present</span> in INDIA{" "}
+                  Our path began in  <span>2022 </span> {" "}
                 </h4>
               </div>
               <div className="dreamit-icon-list">
@@ -306,6 +306,8 @@ const Index = () => {
                     <i className="flaticon-tick" />{" "}
                     <span>  	We focus on traditional knowledge for success in both worlds. </span>
                   </li>
+                   
+                   <p style={{color:'white',padding:"20px"}}>"Join us to nurture academic and spiritual growth through Islamic values"</p>
                 </ul>
               </div>
               <div className="about-button">
@@ -406,7 +408,7 @@ const Index = () => {
           <div className="row counter-vip">
             <div className="col-lg-12">
               <div className="couter-top-title">
-                <h3>  Finished this Achivement in 10+ Years </h3>
+                <h3>  Finished this Achivement in 02+ Years </h3>
               </div>
             </div>
             <div className="col-md-3 col-6">
