@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Image from 'next/image';
-import { Swiper, SwiperSlide } from "swiper/react";
 
 
 const testimonials = [
@@ -43,9 +41,9 @@ const TestimonialComponent = () => {
         .testimonial-container {
           display: flex;
           align-items: center;
-          max-width: 1200px;
+          max-width: 1000px;
           margin: 0 auto;
-          padding: 40px;
+          // padding: px;
           // background-color: #333;
           color: white;
           border-radius: 15px;
@@ -127,7 +125,7 @@ const TestimonialComponent = () => {
         }
       `}</style>
       
-       <div className='col-md-12' style={{backgroundColor:'#0A0A1D',paddingTop:'80px', paddingBottom:'50px',borderRadius:'0px 10px 0px 10px'}}>
+       <div className='col-md-12' style={{backgroundColor:'#0A0A1D',paddingTop:'80px', paddingBottom:'50px',borderRadius:'0px 10px 0px 0px'}}>
       <div className="testimonial-container ">
         <div className="testimonial-image-container">
           <div className="testimonial-image">

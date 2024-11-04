@@ -41,7 +41,7 @@ const Pprocess = () => {
             <div>
               <h3 className={styles.heading}>Start Classes</h3>
               <p className={styles.paragraph}>
-              Pay and begin your courses.</p>
+              Pay and begin your courses</p>
             </div>
           </div>
         </div>

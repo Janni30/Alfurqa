@@ -6399,7 +6399,7 @@ width: 80px;
 height: 80px;
 background-size: 100% auto; /* Increase width to 120% while keeping height auto */
 background-repeat: no-repeat;
-/* background-image: url(../img/coursebg.png); */
+background-image: url(../img/coursebg.png);
 transition: 0.5s;
 background-position: right center; /* Aligns the image to the right */
 

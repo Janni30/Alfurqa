@@ -35,11 +35,11 @@ const Index = () => {
                   <div className="banner-content">  
                     <h3> DESIGNING FOR THE FUTURE</h3>
                     <h1> Arabic Quran Mastery </h1>
-                   <p>Mastering Arabic and understanding the Quran demand structured study and consistent effort to deepen your connection.</p>
+                   <p style={{fontSize:'20px'}}>Mastering Arabic and understanding the Quran demand structured study and consistent effort to deepen your connection.</p>
                   </div>
                   <div className="banner-button">
                     <Link legacyBehavior href="/contact">
-                      <a> Discover More </a>
+                      <a> Join Us Now </a>
                     </Link>
                   </div>
                 </div>
@@ -64,10 +64,7 @@ const Index = () => {
                     <h3> DESIGNING FOR THE FUTURE</h3>
                     <h1>           Welcome to Our Academy
                     </h1>
-                   <p>
-Let's Learn together
-Qur'an and Arabic
-Knowledge doesn’t come but you have to go to it </p>
+                   <p style={{fontSize:'20px'}}>Let's Learn together Qur'an and Arabic Knowledge doesn’t come but you have to go to it </p>
                   </div>
                   <div className="banner-button">
                     <Link legacyBehavior href="/contact">
@@ -244,6 +241,15 @@ Knowledge doesn’t come but you have to go to it </p>
                 </div>
               </div>
             </div>
+            <div className="about-button " style={{marginLeft:'950px'}}>
+
+            <Link legacyBehavior href="/contact">
+                  <a>
+                    {" "}
+                    Start Your Journey <i className="bi bi-plus" />{" "}
+                  </a>
+                </Link>
+                </div>
             {/* feature shape */}
             {/* <div className="feature-shape bounce-animate2">
               <img src="assets/images/resource/all-shap.png" alt />
@@ -417,7 +423,7 @@ Knowledge doesn’t come but you have to go to it </p>
                   <h4>
                     <Counter end={66} />
                   </h4>
-                  <p>countries reached </p>
+                  <p>Countries reached </p>
                 </div>
               </div>
             </div>
@@ -428,7 +434,7 @@ Knowledge doesn’t come but you have to go to it </p>
                     <Counter end={100} />
                   </h4>
                   <span>+</span>
-                  <p>enrolled students </p>
+                  <p>Enrolled students </p>
                 </div>
               </div>
             </div>
@@ -503,9 +509,11 @@ Knowledge doesn’t come but you have to go to it </p>
                     <div className="process-title">
                       <h3>
                         {" "}
-                        One-On-One  <span> Sessions</span>
+                        One-One  <span> Sessions</span>
                       </h3>
-                      <p>We respect the privacy of our esteemed students</p>
+                      <p>
+                      We deeply value and respect the privacy of our esteemed students at all times, ensuring confidentiality.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -520,8 +528,8 @@ Knowledge doesn’t come but you have to go to it </p>
                         
                         Online Portal   <span>access </span>
                       </h3>
-                      <p>Offers easy access to classes with live sessions, recorded lectures, and interactive materials for a flexible learning experience.</p>
-                    </div>
+                      <p>
+                      Provides live sessions, recorded lectures,  interactive materials, accessible learning experience.                      </p>                    </div>
                   </div>
                 </div>
 
@@ -549,7 +557,7 @@ Knowledge doesn’t come but you have to go to it </p>
                         Family  <span> Discount </span>
                       </h3>
                       <p>
-                      "Learning Quran is easier for larger families with our 10% discount for 3 or more students. Families studying together excel in Quran."</p>
+                      Larger families receive a 10% discount for three or more students studying Quran together.                      </p>
                     </div>
                   </div>
                 </div>
@@ -577,7 +585,7 @@ Knowledge doesn’t come but you have to go to it </p>
                         {" "}
                         Online  <span> Tutors </span>
                       </h3>
-                      <p>We select experienced native Arabic tutors from leading Arabic and Islamic universities to guide students in every course.</p>
+                      <p>We choose experienced native Arabic tutors from top universities to guide every course.</p>
                     </div>
                   </div>
                 </div>
@@ -596,8 +604,9 @@ Knowledge doesn’t come but you have to go to it </p>
             </div>
             <div className="col-lg-6 col-md-12 pl-5" data-aos="fade-up">
               <div className="consen-section-title">
-                <h5> Why Alfurqan </h5>
-                <h3>We have customized and flexible online study courses suitable for all family members. </h3>
+                <h5> Why Al Furqan </h5>
+                <h3>We have  flexible online study courses suitable for all family members. </h3>
+                <br/>
                 <h3>
                   {" "}
                   Over 2000+ <span> Student </span>
@@ -614,7 +623,7 @@ Knowledge doesn’t come but you have to go to it </p>
                   <ul>
                     <li>
                       <i className="bi bi-arrow-right-circle" />{" "}
-                      <span style={{color:'black'}}> comprehension Arabic Courses</span>
+                      <span style={{color:'black'}}> Comprehension Arabic Courses</span>
                     </li> <br/>
                     <li>
                       <i className="bi bi-arrow-right-circle" />{" "}

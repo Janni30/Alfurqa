@@ -1566,7 +1566,7 @@ const Header2 = ()=>{
                                                         children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                                             href: "#",
                                                             children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
-                                                                className: "bi bi-dribbble"
+                                                                className: "bi bi-youtube"
                                                             })
                                                         })
                                                     }),
@@ -1574,7 +1574,7 @@ const Header2 = ()=>{
                                                         children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                                             href: "#",
                                                             children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
-                                                                className: "bi bi-twitter"
+                                                                className: "bi bi-whatsapp"
                                                             })
                                                         })
                                                     }),
