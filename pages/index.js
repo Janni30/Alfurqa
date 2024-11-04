@@ -62,12 +62,13 @@ const Index = () => {
                 <div className="col-lg-7 col-md-12">
                 <div className="banner-content">  
                     <h3> DESIGNING FOR THE FUTURE</h3>
-                    <h1> Arabic Quran Mastery </h1>
+                    <h1>           Welcome to Our Academy
+                    </h1>
                    <p>Mastering Arabic and understanding the Quran demand structured study and consistent effort to deepen your connection </p>
                   </div>
                   <div className="banner-button">
                     <Link legacyBehavior href="/contact">
-                      <a> Discover More </a>
+                      <a> Join Us Now</a>
                     </Link>
                   </div>
                 </div>
@@ -278,8 +279,7 @@ const Index = () => {
                   Arabic <span> and the Quran</span>
                 </h2>
                 <p>
-                Experience an immersive journey from beginner to fluency in Arabic, and deepen your understanding of the Quran. Unlock the beauty and profound insights of both, enriching your personal and spiritual growth.
-                </p>
+                “Begin a transformative journey to achieve fluency in Arabic and deepen your comprehension of the Quran. Discover the beauty and profound wisdom of both, enhancing your personal and spiritual growth as you connect more deeply with your faith.”                </p>
               </div>
               <div className="lines style-two pb-15">
                 <div className="line" />
@@ -294,18 +294,17 @@ const Index = () => {
                 <ul>
                   <li>
                     <i className="flaticon-tick" />{" "}
-                    <span> We take pride in fostering strong, lasting relationships</span>
+                    <span> 	We build lasting relationships based on Islamic values. </span>
                   </li>
                   <li>
                     <i className="flaticon-tick" />{" "}
                     <span>
                       {" "}
-                      Delivering high-quality, tailored learning experience.
-                    </span>
+                      	We deliver learning that combines academic and spiritual growth.                     </span>
                   </li>
                   <li>
                     <i className="flaticon-tick" />{" "}
-                    <span>  Focus on traditional knowledge. </span>
+                    <span>  	We focus on traditional knowledge for success in both worlds. </span>
                   </li>
                 </ul>
               </div>
@@ -313,7 +312,7 @@ const Index = () => {
                 <Link legacyBehavior href="/contact">
                   <a>
                     {" "}
-                    Learn More <i className="bi bi-plus" />{" "}
+                    Enroll Now <i className="bi bi-plus" />{" "}
                   </a>
                 </Link>
               </div>
@@ -414,9 +413,9 @@ const Index = () => {
               <div className="counter-single-box">
                 <div className="counter-title">
                   <h4>
-                    <Counter end={1372} />
+                    <Counter end={66} />
                   </h4>
-                  <p>Team Members</p>
+                  <p>countries reached </p>
                 </div>
               </div>
             </div>
@@ -424,10 +423,10 @@ const Index = () => {
               <div className="counter-single-box">
                 <div className="counter-title">
                   <h4>
-                    <Counter end={23} />
+                    <Counter end={100} />
                   </h4>
                   <span>+</span>
-                  <p>Years Experience</p>
+                  <p>enrolled students </p>
                 </div>
               </div>
             </div>
@@ -435,10 +434,10 @@ const Index = () => {
               <div className="counter-single-box">
                 <div className="counter-title">
                   <h4>
-                    <Counter end={38} />
+                    <Counter end={15} />
                   </h4>
                   <span>+</span>
-                  <p>Exper Member</p>
+                  <p>Expert team members </p>
                 </div>
               </div>
             </div>
@@ -446,10 +445,10 @@ const Index = () => {
               <div className="counter-single-box">
                 <div className="counter-title">
                   <h4>
-                    <Counter end={1372} />
+                    <Counter end={99} />
                   </h4>
-                  <span>+</span>
-                  <p>Satisfactions Rate</p>
+                  <span>%</span>
+                  <p>Satisfaction rate </p>
                 </div>
               </div>
             </div>
@@ -517,9 +516,9 @@ const Index = () => {
                       <h3>
                         {" "}
                         
-                  High-Quality  <span>Study </span>
+                        Online Portal   <span>access </span>
                       </h3>
-                      <p>We have a recordings facility for each class</p>
+                      <p>Offers easy access to classes with live sessions, recorded lectures, and interactive materials for a flexible learning experience.</p>
                     </div>
                   </div>
                 </div>
@@ -576,7 +575,7 @@ const Index = () => {
                         {" "}
                         Online  <span> Tutors </span>
                       </h3>
-                      <p>Our tutors are well qualified from different part of the world</p>
+                      <p>We select experienced native Arabic tutors from leading Arabic and Islamic universities to guide students in every course.</p>
                     </div>
                   </div>
                 </div>
@@ -596,26 +595,33 @@ const Index = () => {
             <div className="col-lg-6 col-md-12 pl-5" data-aos="fade-up">
               <div className="consen-section-title">
                 <h5> Why Alfurqan </h5>
-                <h2>We have customized and flexible online study courses suitable for all family members. </h2>
-                <h2>
+                <h3>We have customized and flexible online study courses suitable for all family members. </h3>
+                <h3>
                   {" "}
                   Over 2000+ <span> Student </span>
-                </h2>
-                <p className="about-text1">
+                </h3>
+                {/* <p className="about-text1">
                   {" "}
                   Appropriately enhance principle-centered innovation rather
                   than high standards in platforms. Credibly orchestrate
                   functional.{" "}
-                </p>
+                </p> */}
               </div>
               <div className="dreamit-icon-box">
                 <div className="dreamit-icon-list">
                   <ul>
                     <li>
                       <i className="bi bi-arrow-right-circle" />{" "}
-                      <span style={{color:'black'}}> Communicate orthogonal process</span>
-                    </li>
+                      <span style={{color:'black'}}> comprehension Arabic Courses</span>
+                    </li> <br/>
                     <li>
+                      <i className="bi bi-arrow-right-circle" />{" "}
+                      <span style={{color:'black'}}> Arabic for Quran understanding </span>
+                    </li> <br/>
+                    <li>
+                      <i className="bi bi-arrow-right-circle" />{" "}
+                      <span style={{color:'black'}}>Flexible Learning Options</span>
+                    </li>  <li>
                       <i className="bi bi-arrow-right-circle" />{" "}
                       <span style={{color:'black'}}> Professionally grow cutting-edge paradigms </span>
                     </li>
@@ -645,7 +651,7 @@ const Index = () => {
                 <Link legacyBehavior href="/about">
                   <a>
                     {" "}
-                    <i className="bi bi-gear" /> More About{" "}
+                    <i className="bi bi-gear" /> Get Started{" "}
                   </a>
                 </Link>
               </div>
@@ -797,10 +803,10 @@ const Index = () => {
             <div className="col-lg-7 col-md-6">
               <div className="consen-section-title white pb-50">
                 <h5> Testimonials </h5>
-                <h2> Consen Trusted Customers </h2>
+                <h2> See feedback from our </h2>
                 <h2>
                   {" "}
-                  Awesome <span> Reviews </span>
+                  students around <span> the world </span>
                 </h2>
               </div>
             </div>
@@ -846,7 +852,7 @@ const Index = () => {
                   <div className="testimonial-content1">
                     <div className="single-quote-icon">
                       <div className="quote-thumb">
-                        <img src="assets/images/resource/testi1.png" alt />
+                        <img src="assets/img/boy.png"  height={50} alt />
                       </div>
                       <div className="quote-title">
                         <h4>Philip Anthorpy</h4>
@@ -874,7 +880,7 @@ const Index = () => {
                   <div className="testimonial-content1">
                     <div className="single-quote-icon">
                       <div className="quote-thumb">
-                        <img src="assets/images/resource/testi3.png" alt />
+                        <img src="assets/img/girl.png" alt />
                       </div>
                       <div className="quote-title">
                         <h4> Shilpa Shethy </h4>
@@ -902,7 +908,7 @@ const Index = () => {
                   <div className="testimonial-content1">
                     <div className="single-quote-icon">
                       <div className="quote-thumb">
-                        <img src="assets/images/resource/testi2.png" alt />
+                        <img src="assets/img/boy.png"  height={50} alt />
                       </div>
                       <div className="quote-title">
                         <h4> David Alexon </h4>
@@ -930,7 +936,7 @@ const Index = () => {
                   <div className="testimonial-content1">
                     <div className="single-quote-icon">
                       <div className="quote-thumb">
-                        <img src="assets/images/resource/testi3.png" alt />
+                        <img src="assets/img/girl.png" alt />
                       </div>
                       <div className="quote-title">
                         <h4> Shilpa Shethy </h4>
@@ -958,7 +964,7 @@ const Index = () => {
                   <div className="testimonial-content1">
                     <div className="single-quote-icon">
                       <div className="quote-thumb">
-                        <img src="assets/images/resource/testi2.png" alt />
+                        <img src="assets/img/boy.png" height={50} alt />
                       </div>
                       <div className="quote-title">
                         <h4> David Alexon </h4>
@@ -986,7 +992,7 @@ const Index = () => {
                   <div className="testimonial-content1">
                     <div className="single-quote-icon">
                       <div className="quote-thumb">
-                        <img src="assets/images/resource/testi1.png" alt />
+                        <img src="assets/img/girl.png" alt />
                       </div>
                       <div className="quote-title">
                         <h4>Philip Anthorpy</h4>
@@ -1014,7 +1020,7 @@ const Index = () => {
                   <div className="testimonial-content1">
                     <div className="single-quote-icon">
                       <div className="quote-thumb">
-                        <img src="assets/images/resource/testi2.png" alt />
+                        <img src="assets/img/boy.png" alt height={50} />
                       </div>
                       <div className="quote-title">
                         <h4> David Alexon </h4>

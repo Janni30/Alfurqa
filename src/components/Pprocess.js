@@ -12,17 +12,16 @@ const Pprocess = () => {
     <div className={styles.container}>
        <div className={styles.infographic}>
         <div className={styles.leftCircle} data-aos="fade-left">
-          <h2 className={styles.title}>Business Infographics</h2> 
-          <button className={styles.button}>Learn More</button> {/* Add button here */}
+          <h2 className={styles.title}>HOW TO START CLASSES</h2> 
+          <button className={styles.button}>Begin Your Journey</button> {/* Add button here */}
         </div>
         <div className={styles.rightBoxes}>
           <div className={styles.box} data-aos="fade-down">
             <div className={styles.icon}><span role="img" aria-label="search">🔍</span></div>
             <div>
-              <h3 className={styles.heading}>Lorem Ipsum</h3>
+              <h3 className={styles.heading}>Planning</h3>
               <p className={styles.paragraph}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
+              Set your course and your objective              </p>
             </div>
           </div>
           <br/>
@@ -30,10 +29,9 @@ const Pprocess = () => {
           <div className={styles.box} data-aos="fade-right">
             <div className={styles.icon}><span role="img" aria-label="idea">💡</span></div>
             <div>
-              <h3 className={styles.heading}>Lorem Ipsum</h3>
+              <h3 className={styles.heading}>Scheduling</h3>
               <p className={styles.paragraph}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
+              Create a timetable & plan schedule accordingly</p>
             </div>
           </div>
           <br/>
@@ -41,10 +39,9 @@ const Pprocess = () => {
           <div className={styles.box} data-aos="fade-up">
             <div className={styles.icon}><span role="img" aria-label="target">🎯</span></div>
             <div>
-              <h3 className={styles.heading}>Lorem Ipsum</h3>
+              <h3 className={styles.heading}>Start Classes</h3>
               <p className={styles.paragraph}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
+              Pay and begin your courses.</p>
             </div>
           </div>
         </div>

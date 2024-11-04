@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
+import { Swiper, SwiperSlide } from "swiper/react";
+
 
 const testimonials = [
   {
@@ -44,7 +46,7 @@ const TestimonialComponent = () => {
           max-width: 1200px;
           margin: 0 auto;
           padding: 40px;
-          background-color: #333;
+          // background-color: #333;
           color: white;
           border-radius: 15px;
         }
@@ -78,17 +80,21 @@ const TestimonialComponent = () => {
         .testimonial-content h3 {
           font-size: 1.8em;
           margin-bottom: 10px;
+          color: #fff;
+
         }
 
         .testimonial-content h4 {
           font-size: 1.2em;
           margin-bottom: 20px;
-          color: #ccc;
+          color: #fff;
         }
 
         .testimonial-content p {
           font-size: 1em;
           line-height: 1.6;
+          color: #fff;
+
         }
 
         .thumbnail-row {
@@ -120,7 +126,8 @@ const TestimonialComponent = () => {
           border-color: white;
         }
       `}</style>
-       <div className='col-md-12' style={{backgroundColor:'#0A0A1D',paddingTop:'80px', paddingBottom:'50px',borderRadius:'0px 150px 0px 10px'}}>
+      
+       <div className='col-md-12' style={{backgroundColor:'#0A0A1D',paddingTop:'80px', paddingBottom:'50px',borderRadius:'0px 10px 0px 10px'}}>
       <div className="testimonial-container ">
         <div className="testimonial-image-container">
           <div className="testimonial-image">
