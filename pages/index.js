@@ -64,7 +64,7 @@ const Index = () => {
                     <h3> DESIGNING FOR THE FUTURE</h3>
                     <h1>           Welcome to Our Academy
                     </h1>
-                   <p style={{fontSize:'20px'}}>Let's Learn together Qur'an and Arabic Knowledge doesn’t come but you have to go to it </p>
+                   <p style={{fontSize:'20px'}}>Let's Learn together Quran and Arabic Knowledge doesn’t come but you have to go to it. </p>
                   </div>
                   <div className="banner-button">
                     <Link legacyBehavior href="/contact">
@@ -98,14 +98,10 @@ const Index = () => {
       <br/>   <br/><br/>
       <div className="container pt-40" data-aos="fade-up">
       <div className="row">
-            <div className="col-lg-7 col-md-6">
+            <div className="col-lg-8 col-md-6">
               <div className="consen-section-title  pb-50 mb-1">
                 <h5>Find your Path </h5>
-                <h2> “Empower Your Faith </h2>
-                <h2>
-                  {" "}
-                  Through Learning” <span>  </span>
-                </h2>
+                <h2> "Empower Your Faith Through Learning" </h2>
               </div>
             </div>
           </div>
@@ -116,67 +112,24 @@ const Index = () => {
       <div className="feature-area" data-aos="fade-up"> 
         <div className="container">
           <div className="row feature-bg">
-            <div className="col-lg-4 col-md-6">
-              <div className="single-feature-box0">
-                <div className="feature-box-inner0">
-                  <div className="feature-icon10">
-                    <img src="assets/img/quran.png" height={70} alt />
-                  </div>
-                  <div className="feature-title0">
-                    <h3> Quran </h3>
-                  </div>
-                  <div className="feature-text0">
-                    <p >
-                    <div className="about-button">
-                <Link legacyBehavior href="/contact">
-                  <a>
-                    {" "}
-                    Learn More <i className="bi bi-plus" />{" "}
-                  </a>
-                </Link>
-              </div>
-                    </p>
-                  </div>
-                  <div className="feature-bar0" />
-                </div>
-                {/* feature back */}
-                <div className="consen-feature-back0">
-                  <div className="feature-back-title0">
-                    <h3> Quran </h3>
-                    <h2> Quran Course </h2>
-                  </div>
-                  <div className="feature-back-icon0">
-                    <a href="/quran">
-                    </a>
-                   
-                  <div className="feature-text11">
-                    <p>
-                      {" "}
-                      Learn to pronounce Arabic letters with a phonic sound under Tajweed & Makharij rules, using the Noorani Qaida{" "}
-                    </p>
-                  </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
+          <div className="col-lg-4 col-md-6">
               <div className="single-feature-box">
-                <div className="feature-box-inner">
-                  <div className="feature-icon1">
+                <div className="feature-box-inner" >
+                  {/* <div className="feature-icon1">
                     <img src="assets/img/art.png"  height={70}alt />
-                  </div>
+                  </div> */}
                   <div className="feature-title">
-                    <h3> Tajweed </h3>
+                    <h3> Quaran </h3>
                   </div>
                   <div className="feature-text">
                     <p>
                     <div className="about-button">
-                <Link legacyBehavior href="/contact">
+                {/* <Link legacyBehavior href="/contact">
                   <a>
                     {" "}
                     Learn More <i className="bi bi-plus" />{" "}
                   </a>
-                </Link>
+                </Link> */}
               </div>
                     </p>
                   </div>
@@ -185,39 +138,96 @@ const Index = () => {
                 {/* feature back */}
                 <div className="consen-feature-back">
                   <div className="feature-back-title">
-                    <h3> Tajweed </h3>
-                    <h2>  Tajweed Course</h2>
+                    <h3>Quaran </h3>
+                    <h2>  Quaran Course</h2>
                   </div>
-                  <div className="feature-back-icon">
-                    <a href="/tajweed"></a>
+                  <div className="feature-back-icon" style={{marginTop:'140px'}}>
+                    <a href="/arabic"></a>
                     <div className="feature-text11">
-                    <p>
+                    <p style={{color:'black'}}>
                       {" "}
-                      We offer kids and adults to memorize the whole or part of the Holy Qur’an with a structured program.{" "}
+                      We offer kids and adults to memorize the whole or part of the Holy Quran with a structured program.{" "}
                     </p>
                   </div>
                   </div>
+                  <div className="about-button" style={{marginTop:'-30px'}}>
+                <Link legacyBehavior href="/contact">
+                  <a>
+                    {" "}
+                    Join Us <i className="bi bi-plus" />{" "}
+                  </a>
+                </Link>
+              </div>
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6" style={{backgroundImage:''}}>
-              <div className="single-feature-box1">
-                <div className="feature-box-inner1">
-                  <div className="feature-icon11">
-                    <img src="assets/img/person.png" height={70} alt />
-                  </div>
-                  <div className="feature-title1">
+            <div className="col-lg-4 col-md-6">
+              <div className="single-feature-box0">
+                <div className="feature-box-inner0" >
+                  {/* <div className="feature-icon1">
+                    <img src="assets/img/art.png"  height={70}alt />
+                  </div> */}
+                  <div className="feature-title0">
                     <h3> Arabic </h3>
                   </div>
-                  <div className="feature-text1">
+                  <div className="feature-text0">
                     <p>
                     <div className="about-button">
-                <Link legacyBehavior href="/contact">
+                {/* <Link legacyBehavior href="/contact">
                   <a>
                     {" "}
                     Learn More <i className="bi bi-plus" />{" "}
                   </a>
+                </Link> */}
+              </div>
+                    </p>
+                  </div>
+                  <div className="feature-bar0" />
+                </div>
+                {/* feature back */}
+                <div className="consen-feature-back0">
+                  <div className="feature-back-title0">
+                    <h3> Arabic </h3>
+                    <h2> Arabic Course</h2>
+                  </div>
+                  <div className="feature-back-icon0" style={{marginTop:'140px'}}>
+                    <a href="/arabic"></a>
+                    <div className="feature-text110">
+                    <p style={{color:'black'}}>
+                      {" "}
+                      We offer kids and adults to memorize the whole or part of the Holy Quran with a structured program.{" "}
+                    </p>
+                  </div>
+                  </div>
+                  <div className="about-button" style={{marginTop:'-30px'}}>
+                <Link legacyBehavior href="/contact">
+                  <a>
+                    {" "}
+                    Join Us <i className="bi bi-plus" />{" "}
+                  </a>
                 </Link>
+              </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="single-feature-box1">
+                <div className="feature-box-inner1" >
+                  {/* <div className="feature-icon1">
+                    <img src="assets/img/art.png"  height={70}alt />
+                  </div> */}
+                  <div className="feature-title1">
+                    <h3> Islamic </h3>
+                  </div>
+                  <div className="feature-text1">
+                    <p>
+                    <div className="about-button">
+                {/* <Link legacyBehavior href="/contact">
+                  <a>
+                    {" "}
+                    Learn More <i className="bi bi-plus" />{" "}
+                  </a>
+                </Link> */}
               </div>
                     </p>
                   </div>
@@ -226,18 +236,26 @@ const Index = () => {
                 {/* feature back */}
                 <div className="consen-feature-back1">
                   <div className="feature-back-title1">
-                    <h3> Arabic </h3>
-                    <h2> Arabic Course </h2>
+                    <h3> Islamic </h3>
+                    <h2>  Islamic Course</h2>
                   </div>
-                  <div className="feature-back-icon1">
+                  <div className="feature-back-icon1" style={{marginTop:'140px'}}>
                     <a href="/arabic"></a>
-                    <div className="feature-text11">
-                    <p>
+                    <div className="feature-text111">
+                    <p style={{color:'black'}}>
                       {" "}
-                      Kids will learn to read, write and understand the Arabic language. It will also help with their academic course.{" "}
+                      We offer kids and adults to memorize the whole or part of the Holy Quran with a structured program.{" "}
                     </p>
                   </div>
                   </div>
+                  <div className="about-button" style={{marginTop:'-30px'}}>
+                <Link legacyBehavior href="/contact">
+                  <a>
+                    {" "}
+                    Join Us <i className="bi bi-plus" />{" "}
+                  </a>
+                </Link>
+              </div>
                 </div>
               </div>
             </div>
@@ -312,11 +330,11 @@ const Index = () => {
                     <i className="flaticon-tick" />{" "}
                     <span>  	We focus on traditional knowledge for success in both worlds. </span>
                   </li>
-                   
-                   <p style={{color:'white',padding:"20px"}}>"Join us to nurture academic and spiritual growth through Islamic values"</p>
+                  
+                   <p style={{color:'white',padding:"20px",fontSize:'19px',paddingTop:'30px'}}>"Join us to nurture academic and spiritual growth through Islamic values"</p>
                 </ul>
               </div>
-              <div className="about-button">
+              <div className="about-button mb-7" style={{marginTop:'-25px'}}>
                 <Link legacyBehavior href="/contact">
                   <a>
                     {" "}
@@ -609,7 +627,7 @@ const Index = () => {
                 <br/>
                 <h3>
                   {" "}
-                  Over 2000+ <span> Student </span>
+                  Over 2000+ <span> Students </span>
                 </h3>
                 {/* <p className="about-text1">
                   {" "}
@@ -645,7 +663,7 @@ const Index = () => {
                 <div className="circle-progress-title">
                   <h4>
                     {" "}
-                    Students <br /> Satisfactions{" "}
+                    Students <br /> Satisfaction{" "}
                   </h4>
                 </div>
                 <div className="extra-progress">
@@ -659,13 +677,15 @@ const Index = () => {
                 </div>
               </div>
               <div className="about-button">
-                <Link legacyBehavior href="/about">
+                <Link legacyBehavior href="/contact">
                   <a>
                     {" "}
-                    <i className="bi bi-gear" /> Get Started{" "}
+                    Get Started <i className="bi bi-plus" />{" "}
                   </a>
                 </Link>
               </div>
+           
+
             </div>  
                 
             {/* <div className="col-lg-6 col-md-12 pl-lg-50">
@@ -796,7 +816,7 @@ const Index = () => {
 <div className="social-media-marketing-services" data-aos="fade-up">
   <div className="container">
     <h2 className="text-center" style={{color:'#E63946'}}>Our Process</h2>
-    <p className="text-center">A streamlined approach to social media marketing success</p>
+    <p className="text-center">Our online study courses are tailored for every family member, offering flexibility and customization. We also feature an engaging and informative crash course specially designed for kids and teens.</p>
   
     <Pprocess />
  </div>
@@ -814,10 +834,10 @@ const Index = () => {
             <div className="col-lg-7 col-md-6">
               <div className="consen-section-title white pb-50">
                 <h5> Testimonials </h5>
-                <h2> See feedback from our </h2>
+                <h2>  Feedback from our </h2>
                 <h2>
                   {" "}
-                  students around <span> the world </span>
+                  Students around <span> the world </span>
                 </h2>
               </div>
             </div>
@@ -831,7 +851,7 @@ const Index = () => {
                         <Counter end={1372} />{" "}
                       </h3>
                       <span>+</span>
-                      <p> Happy Customers </p>
+                      <p> Happy Students </p>
                     </div>
                   </div>
                 </div>
@@ -881,7 +901,9 @@ const Index = () => {
                       <i className="bi bi-star-fill" />
                       <i className="bi bi-star-fill" />
                       <i className="bi bi-star-fill" />
-                      <i className="bi bi-star-half" />
+                      <i className="bi bi-star-fill" />
+
+                    
                     </div>
                   </div>
                 </div>
@@ -909,7 +931,6 @@ const Index = () => {
                       <i className="bi bi-star-fill" />
                       <i className="bi bi-star-fill" />
                       <i className="bi bi-star-fill" />
-                      <i className="bi bi-star-half" />
                     </div>
                   </div>
                 </div>
@@ -965,7 +986,8 @@ const Index = () => {
                       <i className="bi bi-star-fill" />
                       <i className="bi bi-star-fill" />
                       <i className="bi bi-star-fill" />
-                      <i className="bi bi-star-half" />
+                      <i className="bi bi-star-fill" />
+
                     </div>
                   </div>
                 </div>
@@ -1084,7 +1106,7 @@ const Index = () => {
                   <h5> FAQ </h5>
                   <h2 className="text-black">
                     {" "}
-                    Freequently Asked <span> Question </span>
+                    Frequently Asked <span> Question </span>
                   </h2>
                 </div>
                 <Faqs />
@@ -1157,6 +1179,63 @@ const Index = () => {
         </div>
       </div>
 
+
+      <div className="faq-sectiions" data-aos="fade-up">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6 col-md-12">
+              <div className="consen-section-title white pb-1 mb-1">
+                <h5> process </h5>
+                <h2>
+                  {" "}
+                  Freequently Asked <span> Question </span>
+                </h2>
+                <p className="study-text1">
+                  {" "}
+                  Appropriately enhance principle-centered innovation rather
+                  than high standards in platforms. Credibly orchestrate
+                  functional.{" "}
+                </p>
+              </div>
+              <div className="dreamit-icon-list">
+                <ul>
+                  <li>
+                    <i className="bi bi-arrow-right-circle" />{" "}
+                    <span> Communicate orthogonal process </span>
+                  </li>
+                  <li>
+                    <i className="bi bi-arrow-right-circle" />{" "}
+                    <span> Professionally grow cutting-edge paradigms </span>
+                  </li>
+                  <li>
+                    <i className="bi bi-arrow-right-circle" />{" "}
+                    <span> Communicate orthogonal process </span>
+                  </li>
+                  <li>
+                    <i className="bi bi-arrow-right-circle" />{" "}
+                    <span> Professionally grow cutting-edge paradigms </span>
+                  </li>
+                </ul>
+              </div>
+              <div className="why-choose-button">
+                <Link legacyBehavior href="/about">
+                  <a>
+                    {" "}
+                    <i className="bi bi-gear" /> More About{" "}
+                  </a>
+                </Link>
+              </div>
+            </div>
+            <div className="col-lg-6 col-md-12 pl-0">
+              {/* Start Accordion */}
+              <div className="tab_container pl-30 pt-20">
+                <Faqs />
+              </div>
+              {/* End Accordion */}
+            </div>
+          </div>
+        </div>
+      </div>
       {/*==================================================*/}
       {/* End consen faq Area */}
       {/*==================================================*/}

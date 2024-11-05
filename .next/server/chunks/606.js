@@ -380,7 +380,7 @@ var Footer_module_default = /*#__PURE__*/__webpack_require__.n(Footer_module);
 
 
 
- // Import the CSS module
+
 const Footer = ()=>{
     const [isLoginOpen, setIsLoginOpen] = (0,external_react_.useState)(false);
     const toggleLoginPopup = ()=>{
@@ -402,17 +402,44 @@ const Footer = ()=>{
                             /*#__PURE__*/ jsx_runtime_.jsx("ul", {
                                 className: (Footer_module_default()).list,
                                 children: [
-                                    "About",
-                                    "Blog",
-                                    "Teachers",
-                                    "Career",
-                                    "Testimonials",
-                                    "Contact Us",
-                                    "FAQs"
+                                    {
+                                        name: "About",
+                                        link: "/about"
+                                    },
+                                    {
+                                        name: "Blog",
+                                        link: "/blog"
+                                    },
+                                    {
+                                        name: "Teachers",
+                                        link: "/teachers"
+                                    },
+                                    {
+                                        name: "Career",
+                                        link: "/career"
+                                    },
+                                    {
+                                        name: "Testimonials",
+                                        link: "/testimonials"
+                                    },
+                                    {
+                                        name: "Contact Us",
+                                        link: "/contact"
+                                    },
+                                    {
+                                        name: "FAQs",
+                                        link: "/faqs"
+                                    }
                                 ].map((item)=>/*#__PURE__*/ jsx_runtime_.jsx("li", {
                                         className: (Footer_module_default()).listItem,
-                                        children: item
-                                    }, item))
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                            href: item.link,
+                                            style: {
+                                                color: "white"
+                                            },
+                                            children: item.name
+                                        })
+                                    }, item.name))
                             })
                         ]
                     }),
@@ -425,15 +452,30 @@ const Footer = ()=>{
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("ul", {
                                 className: (Footer_module_default()).list,
+                                "text-white": true,
                                 children: [
-                                    "Tajweed Course",
-                                    "Online Quran",
-                                    "Memorization",
-                                    "Arabic"
+                                    {
+                                        name: "Tajweed Course",
+                                        link: "/tajweed"
+                                    },
+                                    {
+                                        name: "Online Quran",
+                                        link: "/quran"
+                                    },
+                                    {
+                                        name: "Arabic",
+                                        link: "/arabic"
+                                    }
                                 ].map((course)=>/*#__PURE__*/ jsx_runtime_.jsx("li", {
                                         className: (Footer_module_default()).listItem,
-                                        children: course
-                                    }, course))
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                            href: course.link,
+                                            style: {
+                                                color: "white"
+                                            },
+                                            children: course.name
+                                        })
+                                    }, course.name))
                             })
                         ]
                     }),
@@ -508,8 +550,13 @@ const Footer = ()=>{
                                     "twitter",
                                     "linkedin",
                                     "youtube"
-                                ].map((platform)=>/*#__PURE__*/ jsx_runtime_.jsx("i", {
-                                        className: `fab fa-${platform} ${(Footer_module_default()).socialIcon}`
+                                ].map((platform)=>/*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                        href: `https://www.${platform}.com`,
+                                        target: "_blank",
+                                        rel: "noopener noreferrer",
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
+                                            className: `fab fa-${platform} ${(Footer_module_default()).socialIcon}`
+                                        })
                                     }, platform))
                             })
                         ]
@@ -1345,93 +1392,71 @@ const Menus_DaskTopMenusMenus = ()=>{
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
         className: "nav_scroll text-center",
         children: [
-            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                className: "search-bar",
-                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("form", {
-                    children: [
-                        /*#__PURE__*/ jsx_runtime_.jsx("input", {
-                            type: "text",
-                            placeholder: "Search..."
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("button", {
-                            type: "submit",
-                            children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
-                                className: "fas fa-search"
-                            })
-                        })
-                    ]
-                })
-            }),
             /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                className: "nav-item",
+                children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                     href: "/course",
                     children: "Courses"
                 })
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                className: "nav-item",
                 children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                    legacyBehavior: true,
                     href: "/pricing",
                     children: "Pricing"
                 })
             }),
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
-                className: "dropdown",
+                className: "nav-item dropdown",
                 onMouseEnter: handleMouseEnter,
                 onMouseLeave: handleMouseLeave,
                 children: [
-                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
+                    /*#__PURE__*/ jsx_runtime_.jsx("a", {
                         href: "#",
-                        children: [
-                            "Discover",
-                            /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
-                                    className: "fas fa-angle-down"
-                                })
-                            })
-                        ]
+                        className: "dropdown-toggle",
+                        children: "Discover"
                     }),
                     isDropdownOpen && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
                         className: "dropdown-menu",
                         children: [
                             /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                    href: "about",
+                                children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                    href: "/about",
                                     children: "About us"
                                 })
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                    href: "",
+                                children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                    href: "/blog",
                                     children: "Blog"
                                 })
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                    href: "#",
+                                children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                    href: "/teachers",
                                     children: "Teachers"
                                 })
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                    href: "#",
+                                children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                    href: "/testimonials",
                                     children: "Testimonials"
                                 })
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                    href: "#",
+                                children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                    href: "/career",
                                     children: "Career"
                                 })
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                    href: "#",
+                                children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                    href: "/faq",
                                     children: "FAQ"
                                 })
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                     href: "/contact",
                                     children: "Contact Us"
                                 })
@@ -1439,6 +1464,15 @@ const Menus_DaskTopMenusMenus = ()=>{
                         ]
                     })
                 ]
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                className: "nav-item",
+                children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                    href: "tel:+1234567890",
+                    children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
+                        className: "fas fa-phone"
+                    })
+                })
             })
         ]
     });

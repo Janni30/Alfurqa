@@ -8,12 +8,12 @@ const Breadcumb = ({ pageName }) => {
           <div className="col-lg-12">
             <div className="breadcumb-content">
               <h1> {pageName} </h1>
-              <ul>
+              {/* <ul>
                 <li>
                   <Link href="/">Home</Link>
                 </li>
                 <li> {pageName} </li>
-              </ul>
+              </ul> */}
             </div>
           </div>
           <div className="britcam-shape">

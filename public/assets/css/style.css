@@ -2410,6 +2410,7 @@ tbody tr:hover {
 }
 
 /*about button*/
+
 .about-button a {
   padding: 9px 14px 14px 42px;
   font-family: "Fira Sans";
@@ -3474,14 +3475,15 @@ p.choose-text1 {
 <--  Consen Testimonial Area Css -->
 ======================================================***/
 .testimonial-area {
-  background: url(../images/resource/process-bg7.png);
+  /* background: url(../images/resource/process-bg7.png); */
+  background-color: #06132b;
     background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 95px 0 95px;
   position: relative;
   z-index: 1;
-      border-radius: 100px 0px 100px 0px;
+      /* border-radius: 100px 0px 100px 0px; */
       height: 650px;
 }
 
@@ -3509,7 +3511,7 @@ p.choose-text1 {
   width: 100%;
   transition: 0.5s;
   z-index: -1;
-  background: url(../images/resource/earth.png);
+  /* background: url(../images/resource/earth.png); */
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -3543,7 +3545,7 @@ p.choose-text1 {
   position: absolute;
   bottom: 5px;
   right: -10px;
-  background: url(../images/resource/quote1.png);
+  /* background: url(../images/resource/quote1.png); */
   background-repeat: no-repeat;
   background-position: center center;
   width: 31px;
@@ -3616,13 +3618,17 @@ p.choose-text1 {
   width: 100%;
 }
 
-.testimonial-single-box:hover .quote-title h4,
-.testimonial-single-box:hover .quote-title p,
-.testimonial-single-box:hover .em-testimonial-text p,
-.testimonial-single-box:hover .em-testi-start-icon i {
+
+.testimonial-single-box:hover .em-testi-start-icon i,
+.testimonial-single-box:hover .quote-title p
+
+ {
   color: #fff;
 }
-
+.testimonial-single-box:hover .quote-title h4,
+.testimonial-single-box:hover .em-testimonial-text p{
+  color: #000;
+}
 /*testi shape thumb*/
 .testi-shape-thumb {
   position: absolute;
@@ -6044,8 +6050,8 @@ span.fill {
 <!-- Consen Breadcumb Area Css -->
 ==================================================-*/
 .breadcumb-area {
-  background: linear-gradient(rgba(19, 19, 35, 0.6), rgba(0, 0, 0, 0.5)),
-    url(../images/resource/braitcam.png) no-repeat center/cover;
+  background: 
+    url(../images/resource/course_banner2.jpg) no-repeat center/cover;
   height: 350px;
   position: relative;
 }
@@ -6184,10 +6190,16 @@ span.fill {
   overflow: hidden;
   border-top: 5px solid #ff2c5d;
   transition: 0.5s;
-  background: #fff;
+  background-image:url("/assets/img/course1b.png");
   box-shadow: 0px 5px 30px 0px rgb(137 139 143 / 10%);
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
+.single-feature-box:hover {
+  background-image: none;
+  /* Optional: Add a fallback background color */
+}
 .single-feature-box:before {
   position: absolute;
   content: "";
@@ -6224,6 +6236,7 @@ background-position: right center; /* Aligns the image to the right */
   margin: 11px 0 14px 0;
   font-size: 24px;
   font-weight: 600;
+  color: #fff;
 }
 
 .feature-icon1 {
@@ -6364,8 +6377,21 @@ background-position: right center; /* Aligns the image to the right */
 }
 
 
-/* Feature style 0 */
-.single-feature-box0 {
+
+
+/* fature0 */
+.feature-area0 {
+  background: #fff;
+  padding: 0 0 80px;
+}
+
+.row.feature-bg0 {
+  position: relative;
+  z-index: 1;
+  margin-top: -20px;
+}
+
+.single-feature-box0{
   padding: 45px 19px 49px 40px;
   border: 0;
   text-align: left;
@@ -6375,10 +6401,16 @@ background-position: right center; /* Aligns the image to the right */
   overflow: hidden;
   border-top: 5px solid #ff2c5d;
   transition: 0.5s;
-  background: #fff;
+  background-image:url("/assets/img/course1b.png");
   box-shadow: 0px 5px 30px 0px rgb(137 139 143 / 10%);
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
+.single-feature-box0:hover {
+  background-image: none;
+  /* Optional: Add a fallback background color */
+}
 .single-feature-box0:before {
   position: absolute;
   content: "";
@@ -6386,7 +6418,7 @@ background-position: right center; /* Aligns the image to the right */
   bottom: 0;
   width: 80px;
   height: 80px;
-  /* background: url(../img/course22.png); */
+  /* background: url(../img/course11.png); */
   transition: 0.5s;
   opacity: 0;
   z-index: -1;
@@ -6415,10 +6447,10 @@ background-position: right center; /* Aligns the image to the right */
   margin: 11px 0 14px 0;
   font-size: 24px;
   font-weight: 600;
-} 
+  color: #fff;
+}
 
-
-.feature-icon10 {
+.feature-icon0 {
   font-size: 35px;
   display: inline-block;
   position: relative;
@@ -6426,7 +6458,7 @@ background-position: right center; /* Aligns the image to the right */
   margin-bottom: 27px;
 }
 
-.feature-icon10:after {
+.feature-icon0:after {
   position: absolute;
   content: "";
   top: 10px;
@@ -6438,15 +6470,9 @@ background-position: right center; /* Aligns the image to the right */
   z-index: -1;
 }
 
-.feature-text0 p {
+.feature-text110 p {
   margin: 0 0 35px;
-  line-height: 25px;
-} 
-
-.feature-text11 p {  
-  margin-bottom: 20px; 
-  padding-top: 105px;
-  /* margin: 20 15 35px; */
+  margin-top: -10px;
   line-height: 25px;
 }
 
@@ -6532,7 +6558,8 @@ background-position: right center; /* Aligns the image to the right */
   left: 0;
   bottom: -73px;
   font-size: 24px;
-  color: #fff;
+  color: #fff; 
+  margin-top: 40px;
 }
 
 /*service all hover*/
@@ -6554,17 +6581,29 @@ background-position: right center; /* Aligns the image to the right */
   opacity: 1;
 }
 
-.single-feature-box0:hover .feature-icon10 img {
+.single-feature-box0:hover .feature-icon0 img {
   opacity: 0;
 }
 
-.single-feature-box0:hover .feature-icon10:after {
+.single-feature-box0:hover .feature-icon0:after {
   opacity: 0;
 }
 
 
-/* Feature style 0 */
-.single-feature-box1 {
+
+/* fature1 */
+.feature-area1 {
+  background: #fff;
+  padding: 0 0 80px;
+}
+
+.row.feature-bg1 {
+  position: relative;
+  z-index: 1;
+  margin-top: -20px;
+}
+
+.single-feature-box1{
   padding: 45px 19px 49px 40px;
   border: 0;
   text-align: left;
@@ -6574,10 +6613,16 @@ background-position: right center; /* Aligns the image to the right */
   overflow: hidden;
   border-top: 5px solid #ff2c5d;
   transition: 0.5s;
-  background: #fff;
+  background-image:url("/assets/img/course1b.png");
   box-shadow: 0px 5px 30px 0px rgb(137 139 143 / 10%);
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
+.single-feature-box1:hover {
+  background-image: none;
+  /* Optional: Add a fallback background color */
+}
 .single-feature-box1:before {
   position: absolute;
   content: "";
@@ -6585,6 +6630,7 @@ background-position: right center; /* Aligns the image to the right */
   bottom: 0;
   width: 80px;
   height: 80px;
+  /* background: url(../img/course11.png); */
   transition: 0.5s;
   opacity: 0;
   z-index: -1;
@@ -6613,9 +6659,10 @@ background-position: right center; /* Aligns the image to the right */
   margin: 11px 0 14px 0;
   font-size: 24px;
   font-weight: 600;
+  color: #fff;
 }
 
-.feature-icon11 {
+.feature-icon1 {
   font-size: 35px;
   display: inline-block;
   position: relative;
@@ -6623,7 +6670,7 @@ background-position: right center; /* Aligns the image to the right */
   margin-bottom: 27px;
 }
 
-.feature-icon11:after {
+.feature-icon1:after {
   position: absolute;
   content: "";
   top: 10px;
@@ -6635,8 +6682,9 @@ background-position: right center; /* Aligns the image to the right */
   z-index: -1;
 }
 
-.feature-text1 p {
+.feature-text111 p {
   margin: 0 0 35px;
+  margin-top: -10px;
   line-height: 25px;
 }
 
@@ -6722,7 +6770,8 @@ background-position: right center; /* Aligns the image to the right */
   left: 0;
   bottom: -73px;
   font-size: 24px;
-  color: #fff;
+  color: #fff; 
+  margin-top: 40px;
 }
 
 /*service all hover*/
@@ -6744,13 +6793,30 @@ background-position: right center; /* Aligns the image to the right */
   opacity: 1;
 }
 
-.single-feature-box1:hover .feature-icon10 img {
+.single-feature-box1:hover .feature-icon1 img {
   opacity: 0;
 }
 
-.single-feature-box1:hover .feature-icon10:after {
+.single-feature-box1:hover .feature-icon1:after {
   opacity: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Feature style 0 */
+
 /*feature shape*/
 .feature-shape {
   position: absolute;

@@ -14,55 +14,45 @@ export const DaskTopMenusMenus = () => {
 
   return (
     <ul className="nav_scroll text-center">
-      {/* Search Bar */}
-      <div className="search-bar">
-        <form>
-          <input type="text" placeholder="Search..." />
-          <button type="submit">
-            <i className="fas fa-search" />
-          </button>
-        </form>
-      </div>
-
       {/* Courses Menu */}
-      <li>
-        <a href="/course">
-          Courses
-        </a>
+      <li className="nav-item">
+        <Link href="/course">Courses</Link>
       </li>
 
       {/* Pricing Menu */}
-      <li>
-        <Link legacyBehavior href="/pricing">
-          Pricing
-        </Link>
+      <li className="nav-item">
+        <Link href="/pricing">Pricing</Link>
       </li>
 
       {/* Discover Menu with Dropdown on Hover */}
       <li
-        className="dropdown"
+        className="nav-item dropdown"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <a href="#">
-          Discover
-          <span>
-            <i className="fas fa-angle-down" />
-          </span>
+        <a href="#" className="dropdown-toggle">
+          Discover 
         </a>
 
         {/* Dropdown Menu */}
         {isDropdownOpen && (
           <ul className="dropdown-menu">
-            <li><a href="about">About us</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="#">Teachers</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">Career</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="/contact">Contact Us</a></li>
+            <li><Link href="/about">About us</Link></li>
+            <li><Link href="/blog">Blog</Link></li>
+            <li><Link href="/teachers">Teachers</Link></li>
+            <li><Link href="/testimonials">Testimonials</Link></li>
+            <li><Link href="/career">Career</Link></li>
+            <li><Link href="/faq">FAQ</Link></li>
+            <li><Link href="/contact">Contact Us</Link></li>
           </ul>
         )}
+      </li>
+
+      {/* Telephone Menu */}
+      <li className="nav-item">
+        <a href="tel:+1234567890">
+          <i className="fas fa-phone" /> 
+        </a>
       </li>
     </ul>
   );

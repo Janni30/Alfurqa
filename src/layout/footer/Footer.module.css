@@ -44,6 +44,7 @@
   .list {
     list-style-type: none;
     padding: 0;
+    color: #fff;
   }
   
   .listItem {
@@ -91,6 +92,9 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+  }
+  .listItem {
+    color: white;
   }
   
   .loginPopup {
