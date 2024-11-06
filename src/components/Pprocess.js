@@ -9,6 +9,7 @@ const Pprocess = () => {
   }, []);
 
   return (
+    <div >
     <div className={styles.container}>
        <div className={styles.infographic}>
         <div className={styles.leftCircle} data-aos="fade-left">
@@ -46,6 +47,7 @@ const Pprocess = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

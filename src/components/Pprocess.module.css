@@ -16,11 +16,11 @@
 }
 
 .leftCircle {
-  width: 430px;
-  height: 430px;
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
-  background-color: #150909;
-  box-shadow: 0px 4px 4px 4px #E63946;
+  background-color: #fffafa;
+  /* box-shadow: 0px 4px 4px 4px #E63946; */
   display: flex;
   flex-direction: column;
   justify-content: center; /* Vertical centering */
@@ -32,7 +32,7 @@
   text-align: center;
   font-size: 20px;
   font-weight: bold;
-  color: aliceblue;
+  color: rgb(22, 23, 23);
   margin-bottom: 20px; /* Space between title and button */
 }
 

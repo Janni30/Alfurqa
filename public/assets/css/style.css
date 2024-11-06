@@ -6180,7 +6180,7 @@ span.fill {
   margin-top: -20px;
 }
 
-.single-feature-box {
+.single-feature-box{
   padding: 45px 19px 49px 40px;
   border: 0;
   text-align: left;
@@ -6239,7 +6239,7 @@ background-position: right center; /* Aligns the image to the right */
   color: #fff;
 }
 
-.feature-icon1 {
+.feature-icon {
   font-size: 35px;
   display: inline-block;
   position: relative;
@@ -6247,7 +6247,7 @@ background-position: right center; /* Aligns the image to the right */
   margin-bottom: 27px;
 }
 
-.feature-icon1:after {
+.feature-icon:after {
   position: absolute;
   content: "";
   top: 10px;
@@ -6261,6 +6261,7 @@ background-position: right center; /* Aligns the image to the right */
 
 .feature-text p {
   margin: 0 0 35px;
+  margin-top: -10px;
   line-height: 25px;
 }
 
@@ -6346,7 +6347,8 @@ background-position: right center; /* Aligns the image to the right */
   left: 0;
   bottom: -73px;
   font-size: 24px;
-  color: #fff;
+  color: #fff; 
+  margin-top: 40px;
 }
 
 /*service all hover*/
@@ -6368,13 +6370,14 @@ background-position: right center; /* Aligns the image to the right */
   opacity: 1;
 }
 
-.single-feature-box:hover .feature-icon1 img {
+.single-feature-box0:hover .feature-icon img {
   opacity: 0;
 }
 
-.single-feature-box:hover .feature-icon1:after {
+.single-feature-box0:hover .feature-icon:after {
   opacity: 0;
 }
+
 
 
 
@@ -6401,7 +6404,7 @@ background-position: right center; /* Aligns the image to the right */
   overflow: hidden;
   border-top: 5px solid #ff2c5d;
   transition: 0.5s;
-  background-image:url("/assets/img/course1b.png");
+  background-image:url("/assets/img/courseee.png");
   box-shadow: 0px 5px 30px 0px rgb(137 139 143 / 10%);
   height: 400px;
   background-repeat: no-repeat;
@@ -6613,7 +6616,7 @@ background-position: right center; /* Aligns the image to the right */
   overflow: hidden;
   border-top: 5px solid #ff2c5d;
   transition: 0.5s;
-  background-image:url("/assets/img/course1b.png");
+  background-image:url("/assets/img/coursee.png");
   box-shadow: 0px 5px 30px 0px rgb(137 139 143 / 10%);
   height: 400px;
   background-repeat: no-repeat;
@@ -8490,12 +8493,20 @@ ul.social-box li a:hover {
   list-style: none; /* Remove bullet points */
 }
 
+.back{
+  background:url(../images/about/ceo-bg.png);
+
+  /* background: url(../images/resource/why-choose-bg.png); */
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-position: center;
+  padding: 40px 0 100px;
+}
 
 
 .social-media-marketing-services {
   padding: 60px 0;
   background: #f9f9f9;
-  background-image: url('../images/about/ceo-bg.png');
     background-repeat: no-repeat;
 }
 
@@ -8506,15 +8517,15 @@ ul.social-box li a:hover {
 } */
 
 h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-size: 2.0rem;
+  margin-bottom: 10px;
   color: #333;
 }
 
 p.text-center {
-  font-size: 1.2rem;
-  color: #666;
-  margin-bottom: 40px;
+  font-size: 1.rem;
+  color: black;
+  /* margin-bottom: 40px; */
 }
 
 .services-item-wrap {

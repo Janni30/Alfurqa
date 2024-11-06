@@ -112,16 +112,17 @@ const Index = () => {
       <div className="feature-area" data-aos="fade-up"> 
         <div className="container">
           <div className="row feature-bg">
-          <div className="col-lg-4 col-md-6">
+       
+            <div className="col-lg-4 col-md-6">
               <div className="single-feature-box">
                 <div className="feature-box-inner" >
                   {/* <div className="feature-icon1">
                     <img src="assets/img/art.png"  height={70}alt />
                   </div> */}
                   <div className="feature-title">
-                    <h3> Quaran </h3>
+                    <h3> Quran </h3>
                   </div>
-                  <div className="feature-text">
+                  <div className="feature-text11">
                     <p>
                     <div className="about-button">
                 {/* <Link legacyBehavior href="/contact">
@@ -138,12 +139,12 @@ const Index = () => {
                 {/* feature back */}
                 <div className="consen-feature-back">
                   <div className="feature-back-title">
-                    <h3>Quaran </h3>
-                    <h2>  Quaran Course</h2>
+                    <h3> Quran </h3>
+                    <h2> Quran Course</h2>
                   </div>
                   <div className="feature-back-icon" style={{marginTop:'140px'}}>
                     <a href="/arabic"></a>
-                    <div className="feature-text11">
+                    <div className="feature-text">
                     <p style={{color:'black'}}>
                       {" "}
                       We offer kids and adults to memorize the whole or part of the Holy Quran with a structured program.{" "}
@@ -217,7 +218,7 @@ const Index = () => {
                     <img src="assets/img/art.png"  height={70}alt />
                   </div> */}
                   <div className="feature-title1">
-                    <h3> Islamic </h3>
+                    <h3> Islamic Studies</h3>
                   </div>
                   <div className="feature-text1">
                     <p>
@@ -237,7 +238,7 @@ const Index = () => {
                 <div className="consen-feature-back1">
                   <div className="feature-back-title1">
                     <h3> Islamic </h3>
-                    <h2>  Islamic Course</h2>
+                    <h2>  Islamic Studies</h2>
                   </div>
                   <div className="feature-back-icon1" style={{marginTop:'140px'}}>
                     <a href="/arabic"></a>
@@ -811,16 +812,26 @@ const Index = () => {
     
  </div>
 </div> */}
-<TestimonialComponent />
 
-<div className="social-media-marketing-services" data-aos="fade-up">
+<div className="social-media-marketing-services" data-aos="fade-up" style={{backgroundColor:'#050A1E',borderRadius:'200px 0px 200px 0px'}}>
   <div className="container">
-    <h2 className="text-center" style={{color:'#E63946'}}>Our Process</h2>
-    <p className="text-center">Our online study courses are tailored for every family member, offering flexibility and customization. We also feature an engaging and informative crash course specially designed for kids and teens.</p>
+    <h2 className="text-center" style={{color:'#E63946'}}>How to Start </h2>
+    {/* <p className="text-center">Our online study courses are tailored for every family member, offering flexibility and customization. We also feature an engaging and informative crash course specially designed for kids and teens.</p> */}
   
     <Pprocess />
+
  </div>
 </div>
+
+
+<div data-aos="fade-up" >
+  <div className="back" style={{height: '755px' }}>
+    
+    <TestimonialComponent />
+  </div>
+</div>
+
+
 
       {/*==================================================*/}
       {/* End consen process Area */}

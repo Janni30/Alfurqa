@@ -38,31 +38,32 @@ const TestimonialComponent = () => {
   return (
     <>
       <style jsx>{`
-        .testimonial-container {
-          display: flex;
-          align-items: center;
-          max-width: 1000px;
-          margin: 0 auto;
-          // padding: px;
-          // background-color: #333;
-          color: white;
-          border-radius: 15px;
-        }
-
+    .testimonial-container {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    color: white;
+    border-radius: 15px;
+    background-image: url('/images/about/ceo-bg.png');
+    background-size: cover;
+    background-position: center;
+  }
         .testimonial-image-container {
           flex: 1;
           display: flex;
           justify-content: center;
           align-items: center;
-          margin-right: 30px;
+          margin-right: 30px; 
+          font-size:60px;
         }
 
         .testimonial-image {
-          width: 250px;
-          height: 250px;
+          width: 400px;
+          height: 400px;
           border-radius: 50%;
           overflow: hidden;
-          border: 5px solid white;
+          border: 1px solid black;
         }
 
         .testimonial-image img {
@@ -76,22 +77,23 @@ const TestimonialComponent = () => {
         }
 
         .testimonial-content h3 {
-          font-size: 1.8em;
+          font-size: 2.0em;
           margin-bottom: 10px;
-          color: #fff;
+          color: #000; 
+          color:red
 
         }
 
         .testimonial-content h4 {
           font-size: 1.2em;
           margin-bottom: 20px;
-          color: #fff;
+          color: black;
         }
 
         .testimonial-content p {
-          font-size: 1em;
+          font-size: 1.2em;
           line-height: 1.6;
-          color: #fff;
+          color: #000;
 
         }
 
@@ -121,12 +123,16 @@ const TestimonialComponent = () => {
         .thumbnail:hover,
         .thumbnail.active {
           transform: scale(1.1);
-          border-color: white;
+          border-color: black;
         }
       `}</style>
-      
-       <div className='col-md-12' style={{backgroundColor:'#0A0A1D',paddingTop:'80px', paddingBottom:'50px',borderRadius:'0px 10px 0px 0px'}}>
+<div>       
+  
+<div className='col-md-12' style={{backgroundColor:'#fff',paddingTop:'80px', paddingBottom:'50px',borderRadius:'0px 10px 0px 0px'}}>
+<h2 className="text-center" style={{ color: '#E63946' ,fontWeight:'500' ,fontSize:'20px',marginLeft:'100px',}}>Learn From the Best</h2><br></br>
+<p className="text-center" style={{fontSize:'43px',fontWeight:'200',marginLeft:'110px',}} >Our Teachers</p>
       <div className="testimonial-container ">
+        
         <div className="testimonial-image-container">
           <div className="testimonial-image">
             <img src={activeTestimonial.image} alt={activeTestimonial.name} />
@@ -149,6 +155,7 @@ const TestimonialComponent = () => {
             <img src={testimonial.image} alt={testimonial.name} />
           </div>
         ))}
+      </div>
       </div>
       </div>
     </>
