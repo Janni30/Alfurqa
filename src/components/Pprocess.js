@@ -20,7 +20,7 @@ const Pprocess = () => {
           <div className={styles.box} data-aos="fade-down">
             <div className={styles.icon}><span role="img" aria-label="search">🔍</span></div>
             <div>
-              <h3 className={styles.heading}>Planning</h3>
+              <h3 className={styles.heading}>Effective Planning Strategies</h3>
               <p className={styles.paragraph}>
               Set your course and your objective              </p>
             </div>
@@ -30,7 +30,7 @@ const Pprocess = () => {
           <div className={styles.box} data-aos="fade-right">
             <div className={styles.icon}><span role="img" aria-label="idea">💡</span></div>
             <div>
-              <h3 className={styles.heading}>Scheduling</h3>
+              <h3 className={styles.heading}>Master Your Study Schedule</h3>
               <p className={styles.paragraph}>
               Create a timetable & plan schedule accordingly</p>
             </div>
@@ -40,7 +40,7 @@ const Pprocess = () => {
           <div className={styles.box} data-aos="fade-up">
             <div className={styles.icon}><span role="img" aria-label="target">🎯</span></div>
             <div>
-              <h3 className={styles.heading}>Start Classes</h3>
+              <h3 className={styles.heading}>Optimizing Your Study Techniques</h3>
               <p className={styles.paragraph}>
               Pay and begin your courses</p>
             </div>

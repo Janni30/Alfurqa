@@ -1,8 +1,19 @@
 import Link from "next/link";
 import { Fragment, useState } from "react";
 import { DaskTopMenusMenus } from "./Menus";
+import styles from "./Header2.module.css"; // import your CSS module
+
+
 const Header2 = () => {
+  const [isLoginOpen, setIsLoginOpen] = useState(false);
   const [toggle, setToggle] = useState(false);
+
+
+  // Toggle Login Popup directly
+  const toggleLoginPopup = () => {
+    setIsLoginOpen(!isLoginOpen);
+  };
+
   return (
     <Fragment>
       <div className="header_top_menu d-flex align-items-center mt-10">
@@ -42,9 +53,45 @@ const Header2 = () => {
                         <i className="bi bi-instagram" />
                       </a>
                     </li>
+                    <div className="col-lg-4 col-sm-4 pr-0 text-right">
+                      {/* Arrow Icon to Toggle Login Form */}
+                      <i 
+                        className="bi bi-chevron-down" 
+                        onClick={toggleLoginPopup} 
+                        style={{ cursor: 'pointer', fontSize: '20px', color:'#fff' }}
+                      ></i>
+                    </div>
+
                   </ul>
                 </div>
               </div>
+            
+
+      {/* Login Popup Modal */}
+      {isLoginOpen && (
+        <div className={styles.loginPopup}>
+          <div className={styles.loginPopupContent}>
+            <h3>Login</h3>
+               <form className="form">
+                   <div className="form-group">
+                      <label className="label">Email:</label>
+                      <input type="email" className="form-control" required />
+                   </div>
+                   <div className="form-group">
+                      <label className="label">Password:</label>
+                      <input type="password" className="form-control" required />
+                   </div>
+                   <div className="form-actions">
+                     <button type="submit" className="btn btn-success">Login</button>
+                     <button type="button" className="btn btn-danger" onClick={toggleLoginPopup}>
+                      Cancel
+                     </button>
+                   </div>
+                </form>
+
+          </div>
+        </div>
+         )}
             </div>
           </div>
         </div>
@@ -77,7 +124,7 @@ const Header2 = () => {
                 <DaskTopMenusMenus />
                 <div className="header-button">
                   <Link legacyBehavior href="">
-                  Book Free Sessions
+                     Book Free Sessions
                   </Link>
                 </div>
               </nav>
@@ -85,8 +132,7 @@ const Header2 = () => {
           </div>
         </div>
       </div>
-
-      <div
+    <div
         className={`xs-sidebar-group info-group ${toggle ? "isActive" : ""}`}
       >
         <div

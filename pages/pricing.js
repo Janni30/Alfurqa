@@ -29,7 +29,7 @@ const Pricing = () => {
     </div>
 
     {/* Tab Buttons */}
-    <div className="tab-buttons text-center mb-30">
+    {/* <div className="tab-buttons text-center mb-30">
       <button
         className={`tab-btn ${selectedTab === '30min' ? 'active' : ''}`}
         onClick={() => handleTabChange('30min')}
@@ -42,7 +42,7 @@ const Pricing = () => {
       >
         60 Minutes
       </button>
-    </div>
+    </div> */}
 
     {/* Pricing Plan Display */}
     <div className="Pricing" >
@@ -57,7 +57,7 @@ const Pricing = () => {
           <div className="pricing-item-text mb-15">
           <span className="currencys" style={{ color: 'black' }}>$</span>
           <span className="tks" style={{ color: 'black' }}>30</span>
-          <span className="months" style={{color:'white'}}>/ month</span>
+          <span className="months" style={{color:'white'}}>/ hour</span>
       </div>
 
 <br/>
@@ -114,7 +114,7 @@ const Pricing = () => {
            <div className="pricing-item-text mb-15">
            <span className="currencys" style={{ color: 'black' }}>$</span>
           <span className="tks" style={{ color: 'black' }}>65</span>
-          <span className="months" style={{color:'white'}}>/ month</span>
+          <span className="months" style={{color:'white'}}>/ hour</span>
            </div>
            <br/>
            <div className="pricing-btn">
@@ -173,7 +173,7 @@ const Pricing = () => {
            <div className="pricing-item-text mb-15" >
              <span className="currency" style={{color:'white'}}>$</span>
              <span className="tk" style={{color:'white'}}>75</span>
-             <span className="month" style={{color:'white'}}>/ month</span>
+             <span className="month" style={{color:'white'}}>/ hour</span>
            </div>
            <br/>
            <div className="pricing-btn">
@@ -234,7 +234,7 @@ const Pricing = () => {
            <div className="pricing-item-text mb-15">
              <span className="currency">$</span>
              <span className="tk">90</span>
-             <span className="month">/ month</span>
+             <span className="month">/ hour</span>
            </div>
            <br/>
            <div className="pricing-btn">

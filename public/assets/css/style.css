@@ -52,6 +52,13 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
 /* Dropdown */
 /* Search Bar */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+
 
 .mobile-menu {
   position: relative;
@@ -311,7 +318,7 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
 
 .menu-title h6 {
   font-size: 15px;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   display: inline-block;
   color: #fff;
@@ -411,14 +418,14 @@ nav.consen_menu {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   color: #fff;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
 }
 
 nav.consen_menu span {
   font-size: 13px;
   padding-left: 6px;
-  font-family: FontAwesome;
+  font-family: 'Poppins', sans-serif;
   opacity: 0.5;
 }
 
@@ -439,7 +446,7 @@ nav.consen_menu span {
   background: #e63946;
   border-radius: 30px;
   display: inline-block;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   position: relative;
   z-index: 1;
   transition: 0.5s;
@@ -587,7 +594,7 @@ li.col {
   line-height: 1.3;
   letter-spacing: normal;
   font-size: 16px;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   text-transform: capitalize;
   -webkit-transition: 0.1s;
@@ -603,7 +610,7 @@ li.col {
   line-height: 1.3;
   letter-spacing: normal;
   font-size: 16px;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   text-transform: capitalize;
   -webkit-transition: 0.1s;
@@ -670,7 +677,7 @@ ul.sub-menu li a span {
   padding: 5px 10px;
   color: #fff;
   opacity: 1;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   border-radius: 2px;
   margin-left: 5px;
   transition: 0.5s;
@@ -816,7 +823,7 @@ ul.sub-menu li:hover a span {
 /*slider button*/
 .slider-button a {
   padding: 11px 20px 16px 30px;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   color: #fff;
   background: #e63946;
@@ -1364,7 +1371,7 @@ ul.sub-menu li:hover a span {
 .service-button a {
   padding: 8px 18px 8px 24px;
   font-size: 15px;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   border-radius: 22px;
   background-color: #ffffff;
   color: #232323;
@@ -1402,7 +1409,7 @@ ul.sub-menu li:hover a span {
 /*consen button*/
 .consen-button a {
   padding: 10px 14px 15px 42px;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   color: #fff;
   background: #e63946;
@@ -1600,7 +1607,7 @@ ul.sub-menu li:hover a span {
 .style-three .service-button a {
   padding: 10px 22px;
   font-size: 15px;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   border-radius: 30px;
   background-color: #f6f5f5;
   border: 0;
@@ -1668,7 +1675,7 @@ ul.sub-menu li:hover a span {
   font-size: 15px;
   font-weight: 500;
   border: 1px solid #e63946;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   color: #fff;
   background: #e63946;
   border-radius: 30px;
@@ -2071,7 +2078,7 @@ button.icons {
 table {
   width: 100%;
   border-collapse: collapse;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin-bottom: 20px;
 }
 
@@ -2413,7 +2420,7 @@ tbody tr:hover {
 
 .about-button a {
   padding: 9px 14px 14px 42px;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   color: #fff;
   background: #e63946;
@@ -2496,7 +2503,7 @@ tbody tr:hover {
 p.about-text {
   font-size: 22px;
   font-weight: 500;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   color: #232323 !important;
   line-height: 32px;
   font-style: italic;
@@ -2513,7 +2520,7 @@ p.about-text2 {
 .dreamit-ceo-title h4 {
   font-size: 20px;
   font-weight: 500;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   padding: 8px 0 0 32px;
   position: relative;
   z-index: 1;
@@ -2584,7 +2591,7 @@ p.about-text1 {
 
 .style-three .dreamit-icon-list ul li span {
   color: #232323;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
 }
 
 .style-three .dreamit-icon-list ul li i {
@@ -2604,7 +2611,7 @@ p.about-text1 {
 /*about syle two*/
 .style-three .about-button a {
   padding: 14px 37px;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   color: #fff;
   background: #e63946;
@@ -2642,7 +2649,7 @@ p.about-text1 {
 .progress-box {
   width: 600px;
   margin: 35px auto 0 0px;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
 }
 
 .circle_percent {
@@ -3099,7 +3106,7 @@ p.choose-text1 {
 .why-choose-us-area .dreamit-icon-list ul li span {
   color: #232323;
   font-weight: 400;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
 }
 
 /*case study thumb*/
@@ -3112,7 +3119,7 @@ p.choose-text1 {
 /*case study button*/
 .why-choose-button a {
   padding: 14px 38px;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   color: #fff;
   background: #e63946;
@@ -3208,7 +3215,7 @@ p.choose-text1 {
 .portfolio_nav ul li {
   background: #f6f5f5;
   font-size: 15px;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   transition: all 0.5s ease 0s;
   cursor: pointer;
   padding: 6px 25px;
@@ -3603,7 +3610,7 @@ p.choose-text1 {
   display: inline-block;
   font-size: 30px;
   font-weight: 600;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   color: #e63946;
 }
 
@@ -3800,7 +3807,7 @@ p.choose-text1 {
 .process-number span {
   font-size: 24px;
   font-weight: 500;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   line-height: 26px;
   color: #fff;
   position: relative;
@@ -3842,7 +3849,7 @@ p.choose-text1 {
   font-size: 22px;
   color: #e63946;
   font-weight: 600;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   transition: 0.5s;
   margin-top: 0;
   margin-bottom: 8px;
@@ -3979,7 +3986,7 @@ p.choose-text1 {
   font-size: 22px;
   color: #fff;
   font-weight: 600;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   transition: 0.5s;
 }
 
@@ -4213,7 +4220,7 @@ p.choose-text1 {
   width: 100%;
   display: block;
   cursor: pointer;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 18px;
   color: #fff !important;
@@ -4285,7 +4292,7 @@ a.active {
   top: 0px;
   width: 100%;
   height: 100%;
-  background: url(../images/resource/question.png);
+  /* background: url(../images/resource/question.png); */
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left;
@@ -4297,7 +4304,7 @@ a.active {
 }
 
 .faq-sectiions {
-  background: url(../img/th.jpg);
+  /* background: url(../img/th.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -4314,7 +4321,7 @@ a.active {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(15, 15, 30, 0.8);
+  background-color: rgba(240, 240, 245, 0.8);
 }
 
 .faq-sectiions .dreamit-icon-list ul li i {
@@ -4592,7 +4599,7 @@ a.active {
   color: #fff;
   border-radius: 30px;
   width: 100%;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   cursor: pointer;
   text-align: center;
   transition: 0.5s;
@@ -4704,7 +4711,7 @@ p.slill-text {
 .skill-title span {
   font-size: 60px;
   font-weight: 700;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   color: #fff;
 }
 
@@ -4768,7 +4775,7 @@ p.slill-text {
   font-size: 14px;
   color: #ffffff;
   font-weight: 500;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   background: #e63946;
   border-radius: 30px;
   display: inline-block;
@@ -4874,7 +4881,7 @@ p.slill-text {
   display: inline-block;
   color: #232323;
   transition: 0.5s;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
 }
 
@@ -5162,7 +5169,7 @@ a.social-icon-color3 {
   border-radius: 35px;
   background: #e63946;
   color: #fff;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   text-align: center;
   padding: 12px 20px;
@@ -5244,7 +5251,7 @@ a.social-icon-color3 {
 
 .subscribe-title2 p {
   font-size: 20px;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   color: #fff;
   padding: 12px 0 0;
 }
@@ -5475,7 +5482,7 @@ a.social-icon-color3 {
   color: #fff;
   font-weight: 500;
   font-size: 18px;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
 }
 
 .barfiller {
@@ -6065,7 +6072,7 @@ span.fill {
 .breadcumb-content ul li {
   color: #e63946;
   font-weight: 500;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   text-transform: capitalize;
   display: inline-block;
 }
@@ -6073,7 +6080,7 @@ span.fill {
 .breadcumb-content ul li a {
   font-size: 16px;
   font-weight: 500;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   color: #fff;
   text-transform: uppercase;
   padding-right: 30px;
@@ -6238,7 +6245,23 @@ background-position: right center; /* Aligns the image to the right */
   font-weight: 600;
   color: #fff;
 }
-
+.feature-title h2 {
+  margin: 11px 0 14px 0;
+  font-size: 35px;
+  font-weight: 600;
+  color: #fff;
+}
+.feature-title0 h2 {
+  margin: 11px 0 14px 0;
+  font-size: 35px;
+  font-weight: 600;
+  color: #fff;
+}.feature-title1 h2 {
+  margin: 11px 0 14px 0;
+  font-size: 35px;
+  font-weight: 600;
+  color: #fff;
+}
 .feature-icon {
   font-size: 35px;
   display: inline-block;
@@ -6308,7 +6331,7 @@ background-position: right center; /* Aligns the image to the right */
   color: #e63946;
   font-size: 16px;
   font-weight: 500;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   margin: 0 0 0;
   position: relative;
   left: 40px;
@@ -6404,7 +6427,7 @@ background-position: right center; /* Aligns the image to the right */
   overflow: hidden;
   border-top: 5px solid #ff2c5d;
   transition: 0.5s;
-  background-image:url("/assets/img/courseee.png");
+  background-image:url("/assets/img/cour.png");
   box-shadow: 0px 5px 30px 0px rgb(137 139 143 / 10%);
   height: 400px;
   background-repeat: no-repeat;
@@ -6522,7 +6545,7 @@ background-position: right center; /* Aligns the image to the right */
   color: #e63946;
   font-size: 16px;
   font-weight: 500;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   margin: 0 0 0;
   position: relative;
   left: 40px;
@@ -6734,7 +6757,7 @@ background-position: right center; /* Aligns the image to the right */
   color: #e63946;
   font-size: 16px;
   font-weight: 500;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   margin: 0 0 0;
   position: relative;
   left: 40px;
@@ -6870,7 +6893,7 @@ background-position: right center; /* Aligns the image to the right */
 .tabs li a {
   background-color: #10102e;
   color: #fff;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   display: inline-block;
   outline: none;
@@ -6914,7 +6937,7 @@ ul.tabs-inner-list li i {
 .feture-area .dreamit-icon-list ul li span {
   color: #232323;
   font-weight: 400;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
 }
 
 .feture-area .dreamit-icon-list ul li i {
@@ -7196,7 +7219,7 @@ p {
 
 .pricing-feature ul li b {
   font-weight: 500 !important;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   font-size: 18px;
 }
 
@@ -7263,7 +7286,7 @@ p {
   font-size: 18px;
   color: #ff2c5d;
   font-weight: 600;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
 }
 
 .content-title {
@@ -7271,7 +7294,7 @@ p {
   color: #333;
   font-weight: 600;
   padding: 5px 0 10px 0;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
 }
 
 .content-text {
@@ -7645,7 +7668,7 @@ p {
 
 .tag-item .all-days ul li {
   font-weight: 500;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
 }
 
@@ -7726,7 +7749,7 @@ element.style {
   font-size: 20px;
   font-style: italic;
   color: #232;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   margin-bottom: 12px;
 }
 
@@ -8031,7 +8054,7 @@ label {
 
 .error-button a {
   padding: 14px 40px 14px 40px;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   color: #fff;
   background: #ff2c5d;
@@ -8269,7 +8292,7 @@ ul.list-style-one li {
   color: #fff;
   padding: 16px 0 0;
   overflow: hidden;
-  font-family: "Fira Sans";
+  font-family: 'Poppins', sans-serif;
 }
 
 ul.list-style-one li span {
@@ -9084,6 +9107,31 @@ p.text-center {
   .testimonial-content p {
     font-size: 1rem;
   }
+}
+
+
+/* In your global CSS or module CSS */
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.center-image {
+  margin-bottom: 1rem;
+}
+
+.bottom-images {
+  display: flex;
+  gap: 2rem; /* Adjust spacing as needed */
+}
+
+.rounded {
+  width: 240px;
+  height: 232px;
+  border-radius: 39.25rem !important;
+  object-fit: cover;
 }
 
 

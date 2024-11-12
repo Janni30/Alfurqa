@@ -17,10 +17,10 @@ const Team = () => {
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-12 ">
               <div className="consen-section-title">
-                <h5> About Consen </h5>
+                <h5> About Teachers</h5>
                 <h2>
                   {" "}
-                  We Are Global Stakeholder Over 2000+ <span> Companies </span>
+                  We Are Global Stakeholder Over 100+ <span> Teachers </span>
                 </h2>
                 <p className="about-text1">
                   {" "}
@@ -34,11 +34,19 @@ const Team = () => {
                   <ul>
                     <li>
                       <i className="bi bi-arrow-right-circle" />{" "}
-                      <span> Communicate orthogonal process</span>
+                      <span> Encourage respect, fairness, and moral growth</span>
                     </li>
                     <li>
                       <i className="bi bi-arrow-right-circle" />{" "}
-                      <span> Professionally grow cutting-edge paradigms </span>
+                      <span> Promote lifelong learning with sincere intentions </span>
+                    </li>
+                    <li>
+                      <i className="bi bi-arrow-right-circle" />{" "}
+                      <span> Serve as a positive role model </span>
+                    </li>
+                    <li>
+                      <i className="bi bi-arrow-right-circle" />{" "}
+                      <span>Instill love for Allah and His Messenger </span>
                     </li>
                   </ul>
                 </div>
@@ -49,7 +57,7 @@ const Team = () => {
                 <div className="circle-progress-title">
                   <h4>
                     {" "}
-                    Clients <br /> Satisfactions{" "}
+                    Students <br /> Satisfactions{" "}
                   </h4>
                 </div>
                 <div className="extra-progress">
@@ -57,7 +65,7 @@ const Team = () => {
                   <div className="circle-progress-title">
                     <h4>
                       {" "}
-                      Clients <br /> Satisfactions{" "}
+                      Teachers <br /> Satisfactions{" "}
                     </h4>
                   </div>
                 </div>
@@ -66,7 +74,7 @@ const Team = () => {
                 <Link legacyBehavior href="/about">
                   <a>
                     {" "}
-                    <i className="bi bi-gear" /> More About{" "}
+                     More About{" "}<i className="bi bi-plus" />
                   </a>
                 </Link>
               </div>
@@ -92,7 +100,7 @@ const Team = () => {
       {/*==================================================*/}
       {/* Start Brand Section */}
       {/*===================================================*/}
-      <div className="brand-section upper1">
+      {/* <div className="brand-section upper1">
         <div className="container">
           <div className="row">
             <Swiper {...brandListProps} className="brand-list owl-carousel">
@@ -114,7 +122,7 @@ const Team = () => {
             </Swiper>
           </div>
         </div>
-      </div>
+      </div> */}
       {/*==================================================*/}
       {/* Start consen Team Area */}
       {/*==================================================*/}

@@ -661,62 +661,67 @@ const About = () => {
       {/*==================================================*/}
       {/* Start  FAQ Section */}
       {/*===================================================*/}
-      <div className="faq-sectiions" data-aos="fade-up">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6 col-md-12">
-              <div className="consen-section-title white pb-1 mb-1">
-                <h5> process </h5>
+   
+      <div
+      className="faq-area new-style"
+      style={{
+        backgroundImage: "url(../images/resource/faq-bg2.jpg)",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "center center",
+      }}
+    >
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-6" />
+          <div className="col-lg-6">
+            {/* Start Accordion */}
+            <div className="tab_container">
+              <div
+                className="consen-section-title white pb-40 mb-1"
+                style={{ color: "#fff" }}
+              >
+                <h5>FREEQUENTLY ASKED QUESTION</h5>
                 <h2>
-                  {" "}
-                  Freequently Asked <span> Question </span>
+                  Freequently Asked <span>Question</span>
                 </h2>
-                <p className="study-text1">
-                  {" "}
-                  Appropriately enhance principle-centered innovation rather
-                  than high standards in platforms. Credibly orchestrate
-                  functional.{" "}
-                </p>
               </div>
-              <div className="dreamit-icon-list">
+              <div
+                className="accordion"
+                style={{
+                  listStyle: "none",
+                  margin: 0,
+                  padding: 0,
+                }}
+              >
                 <ul>
                   <li>
-                    <i className="bi bi-arrow-right-circle" />{" "}
-                    <span> Communicate orthogonal process </span>
+                    <a
+                      href="#"
+                      style={{
+                        padding: "16px 20px 16px 30px",
+                        borderRadius: "0",
+                        backgroundColor: "#1f2932",
+                        border: "none",
+                        color: "white",
+                        textDecoration: "none",
+                        display: "block",
+                      }}
+                    >
+                      More Faqs
+                    </a>
+                   
                   </li>
-                  <li>
-                    <i className="bi bi-arrow-right-circle" />{" "}
-                    <span> Professionally grow cutting-edge paradigms </span>
-                  </li>
-                  <li>
-                    <i className="bi bi-arrow-right-circle" />{" "}
-                    <span> Communicate orthogonal process </span>
-                  </li>
-                  <li>
-                    <i className="bi bi-arrow-right-circle" />{" "}
-                    <span> Professionally grow cutting-edge paradigms </span>
-                  </li>
+                  {/* Add more FAQ items as needed */}
                 </ul>
               </div>
-              <div className="why-choose-button">
-                <Link legacyBehavior href="/about">
-                  <a>
-                    {" "}
-                    <i className="bi bi-gear" /> More About{" "}
-                  </a>
-                </Link>
-              </div>
+              <Faqs />
             </div>
-            <div className="col-lg-6 col-md-12 pl-0">
-              {/* Start Accordion */}
-              <div className="tab_container pl-30 pt-20">
-                <Faqs />
-              </div>
-              {/* End Accordion */}
-            </div>
+            {/* End Accordion */}
           </div>
         </div>
       </div>
+    </div>
       {/*==================================================*/}
        <br/> <br/> <br/>
       

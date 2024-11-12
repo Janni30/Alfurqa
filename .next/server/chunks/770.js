@@ -74,7 +74,7 @@ const faqsData = [
     },
     {
         id: 4,
-        title: "Where is the headquarter of your business?",
+        title: "Where is the headquarters of your business?",
         content: "Our headquarters are located in Coimbatore, India, but we operate globally."
     }
 ];
@@ -86,25 +86,33 @@ const Faqs = ()=>{
         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__.Accordion, {
             defaultActiveKey: faqsData[0].id,
             as: "ul",
-            className: "accordion",
+            className: "accord",
             children: faqsData.map((faq)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
+                    style: {
+                        color: "black"
+                    },
                     children: [
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__.Accordion.Toggle, {
                             as: "a",
                             eventKey: faq.id,
-                            onClick: ()=>setActive(faq.id == active ? null : faq.id),
-                            className: faq.id == active ? "active" : "",
-                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
-                                children: [
-                                    " ",
-                                    faq.title,
-                                    " "
-                                ]
+                            onClick: ()=>setActive(faq.id === active ? null : faq.id),
+                            className: faq.id === active ? "active" : "",
+                            style: {
+                                color: "white"
+                            },
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                style: {
+                                    color: "white"
+                                },
+                                children: faq.title
                             })
                         }),
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__.Accordion.Collapse, {
                             eventKey: faq.id,
                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                style: {
+                                    color: "white"
+                                },
                                 children: faq.content
                             })
                         })

@@ -38,9 +38,9 @@ export const DaskTopMenusMenus = () => {
         {isDropdownOpen && (
           <ul className="dropdown-menu">
             <li><Link href="/about">About us</Link></li>
-            <li><Link href="/blog">Blog</Link></li>
-            <li><Link href="/teachers">Teachers</Link></li>
-            <li><Link href="/testimonials">Testimonials</Link></li>
+            <li><Link href="/blog-2column">Blog</Link></li>
+            <li><Link href="/team">Teachers</Link></li>
+            <li><Link href="/testimonial">Testimonials</Link></li>
             <li><Link href="/career">Career</Link></li>
             <li><Link href="/faq">FAQ</Link></li>
             <li><Link href="/contact">Contact Us</Link></li>
@@ -51,7 +51,8 @@ export const DaskTopMenusMenus = () => {
       {/* Telephone Menu */}
       <li className="nav-item">
         <a href="tel:+1234567890">
-          <i className="fas fa-phone" /> 
+          <i className="fas fa-phone" /> +44 20 4577 1227
+
         </a>
       </li>
     </ul>

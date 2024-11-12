@@ -2,27 +2,24 @@ exports.id = 606;
 exports.ids = [606];
 exports.modules = {
 
-/***/ 4224:
+/***/ 230:
 /***/ ((module) => {
 
 // Exports
 module.exports = {
-	"footer": "Footer_footer__8gXeZ",
-	"footerContainer": "Footer_footerContainer__QKoYs",
-	"footerSection": "Footer_footerSection__dZUJg",
-	"footerLogo": "Footer_footerLogo__2lnie",
-	"logoImage": "Footer_logoImage__Yo4kf",
-	"sectionHeading": "Footer_sectionHeading__Srben",
-	"list": "Footer_list__FMq5D",
-	"listItem": "Footer_listItem__i0RL_",
-	"socialIcons": "Footer_socialIcons__aaGQz",
-	"socialIcon": "Footer_socialIcon__qAj4r",
-	"footerBottom": "Footer_footerBottom__BOBZF",
-	"whiteBorder": "Footer_whiteBorder__7KyNQ",
-	"buttonWrapper": "Footer_buttonWrapper__hu_kD",
-	"loginButton": "Footer_loginButton__i9Z0G",
-	"loginPopup": "Footer_loginPopup__muDL7",
-	"loginPopupContent": "Footer_loginPopupContent__QO6GM"
+	"buttonWrapper": "Header2_buttonWrapper__7f9RJ",
+	"loginButton": "Header2_loginButton__BbVZK",
+	"loginPopup": "Header2_loginPopup__A04Is",
+	"loginPopupContent": "Header2_loginPopupContent__RYriZ",
+	"form-group": "Header2_form-group__yl6zR",
+	"form-actions": "Header2_form-actions__EkW_G",
+	"form": "Header2_form__qgy1b",
+	"label": "Header2_label__tLZqP",
+	"form-control": "Header2_form-control__wXeyc",
+	"btn-success": "Header2_btn-success__mYv5i",
+	"btn-danger": "Header2_btn-danger__NIVM7",
+	"followUsText": "Header2_followUsText__E3Jng",
+	"iconList": "Header2_iconList__K92cI"
 };
 
 
@@ -373,265 +370,323 @@ var external_react_ = __webpack_require__(6689);
 // EXTERNAL MODULE: ./node_modules/next/link.js
 var next_link = __webpack_require__(1664);
 var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
-// EXTERNAL MODULE: ./src/layout/footer/Footer.module.css
-var Footer_module = __webpack_require__(4224);
-var Footer_module_default = /*#__PURE__*/__webpack_require__.n(Footer_module);
 ;// CONCATENATED MODULE: ./src/layout/footer/DefaultFooter.js
 
 
 
-
 const Footer = ()=>{
-    const [isLoginOpen, setIsLoginOpen] = (0,external_react_.useState)(false);
-    const toggleLoginPopup = ()=>{
-        setIsLoginOpen(!isLoginOpen);
-    };
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("footer", {
-        className: (Footer_module_default()).footer,
+        style: {
+            backgroundColor: "#1d1d1d",
+            color: "#cccccc",
+            padding: "40px 0",
+            textAlign: "center"
+        },
         children: [
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                className: (Footer_module_default()).footerContainer,
+                style: {
+                    display: "flex",
+                    justifyContent: "space-around",
+                    flexWrap: "wrap",
+                    maxWidth: "1200px",
+                    margin: "0 auto"
+                },
                 children: [
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                        className: (Footer_module_default()).footerSection,
                         children: [
                             /*#__PURE__*/ jsx_runtime_.jsx("h3", {
-                                className: (Footer_module_default()).sectionHeading,
+                                style: {
+                                    color: "#e63946"
+                                },
                                 children: "EXPLORE"
                             }),
+                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
                             /*#__PURE__*/ jsx_runtime_.jsx("ul", {
-                                className: (Footer_module_default()).list,
+                                style: {
+                                    listStyleType: "none",
+                                    padding: 0,
+                                    textAlign: "left"
+                                },
                                 children: [
-                                    {
-                                        name: "About",
-                                        link: "/about"
-                                    },
-                                    {
-                                        name: "Blog",
-                                        link: "/blog"
-                                    },
-                                    {
-                                        name: "Teachers",
-                                        link: "/teachers"
-                                    },
-                                    {
-                                        name: "Career",
-                                        link: "/career"
-                                    },
-                                    {
-                                        name: "Testimonials",
-                                        link: "/testimonials"
-                                    },
-                                    {
-                                        name: "Contact Us",
-                                        link: "/contact"
-                                    },
-                                    {
-                                        name: "FAQs",
-                                        link: "/faqs"
-                                    }
-                                ].map((item)=>/*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                        className: (Footer_module_default()).listItem,
+                                    "About",
+                                    "Blog",
+                                    "Teachers",
+                                    "Career",
+                                    "Testimonials",
+                                    "Contact Us",
+                                    "FAQs"
+                                ].map((item, index)=>/*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                        style: {
+                                            marginBottom: "5px"
+                                        },
                                         children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                                            href: item.link,
+                                            href: `/${item.toLowerCase().replace(" ", "")}`,
                                             style: {
-                                                color: "white"
+                                                color: "#cccccc",
+                                                textDecoration: "none"
                                             },
-                                            children: item.name
+                                            children: item
                                         })
-                                    }, item.name))
+                                    }, index))
                             })
                         ]
                     }),
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                        className: (Footer_module_default()).footerSection,
                         children: [
                             /*#__PURE__*/ jsx_runtime_.jsx("h3", {
-                                className: (Footer_module_default()).sectionHeading,
+                                style: {
+                                    color: "#e63946"
+                                },
                                 children: "COURSES"
                             }),
+                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
                             /*#__PURE__*/ jsx_runtime_.jsx("ul", {
-                                className: (Footer_module_default()).list,
-                                "text-white": true,
+                                style: {
+                                    listStyleType: "none",
+                                    padding: 0,
+                                    textAlign: "left"
+                                },
                                 children: [
-                                    {
-                                        name: "Tajweed Course",
-                                        link: "/tajweed"
-                                    },
-                                    {
-                                        name: "Online Quran",
-                                        link: "/quran"
-                                    },
-                                    {
-                                        name: "Arabic",
-                                        link: "/arabic"
-                                    }
-                                ].map((course)=>/*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                        className: (Footer_module_default()).listItem,
+                                    "Tajweed Course",
+                                    "Online Quran",
+                                    "Arabic"
+                                ].map((course, index)=>/*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                        style: {
+                                            marginBottom: "5px"
+                                        },
                                         children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                                            href: course.link,
+                                            href: `/${course.toLowerCase().replace(" ", "")}`,
                                             style: {
-                                                color: "white"
+                                                color: "#cccccc",
+                                                textDecoration: "none"
                                             },
-                                            children: course.name
+                                            children: course
                                         })
-                                    }, course.name))
+                                    }, index))
                             })
                         ]
                     }),
-                    /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                        href: "/",
-                        legacyBehavior: true,
-                        children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                            title: "AlFurqan Academy",
-                            children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                                src: "assets/img/logo-white.png",
-                                alt: "logo",
-                                className: (Footer_module_default()).logoImage
-                            })
-                        })
-                    }),
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                        className: (Footer_module_default()).footerSection,
                         children: [
                             /*#__PURE__*/ jsx_runtime_.jsx("h3", {
-                                className: (Footer_module_default()).sectionHeading,
+                                style: {
+                                    color: "#e63946"
+                                },
                                 children: "CONTACT US"
                             }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                className: "text-white",
+                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                            /*#__PURE__*/ jsx_runtime_.jsx("ul", {
                                 style: {
-                                    marginBottom: "10px"
+                                    listStyleType: "none",
+                                    paddingLeft: "35px",
+                                    textAlign: "left",
+                                    color: "#cccccc"
                                 },
-                                children: "Help Center:"
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                className: "text-white",
-                                style: {
-                                    marginBottom: "10px"
-                                },
-                                children: "UK +44 20 4577 1227"
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                className: "text-white",
-                                style: {
-                                    marginBottom: "10px"
-                                },
-                                children: "USA +1 85 5442 3380"
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                className: "text-white",
-                                style: {
-                                    marginBottom: "10px"
-                                },
-                                children: "Email:"
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                className: "text-white",
-                                style: {
-                                    marginBottom: "10px"
-                                },
-                                children: "contact@alfurqan.academy"
+                                children: [
+                                    {
+                                        name: "USA +1 855 477 2100",
+                                        href: "tel:+1 85 5442 3380"
+                                    },
+                                    {
+                                        name: "UK +44 20 3287 5211",
+                                        href: "tel: +44 20 4577 1227"
+                                    },
+                                    // { name: 'AU +61 2 8005 1435', href: 'tel:+61280051435' },
+                                    {
+                                        name: "contact@alfurqan.academy",
+                                        href: "mailto:contact@alfurqan.academy"
+                                    }
+                                ].map((contact, index)=>/*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                        style: {
+                                            marginBottom: "5px"
+                                        },
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                            href: contact.href,
+                                            style: {
+                                                color: "#cccccc",
+                                                textDecoration: "none"
+                                            },
+                                            children: contact.name
+                                        })
+                                    }, index))
                             })
                         ]
                     }),
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                        className: (Footer_module_default()).footerSection,
                         children: [
                             /*#__PURE__*/ jsx_runtime_.jsx("h3", {
-                                className: (Footer_module_default()).sectionHeading,
+                                style: {
+                                    color: "#e63946"
+                                },
                                 children: "FOLLOW US"
                             }),
+                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                className: (Footer_module_default()).socialIcons,
+                                style: {
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    gap: "15px",
+                                    fontSize: "1.5em"
+                                },
                                 children: [
                                     "facebook",
                                     "instagram",
-                                    "twitter",
-                                    "linkedin",
+                                    "whatsapp",
                                     "youtube"
-                                ].map((platform)=>/*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                ].map((platform, index)=>/*#__PURE__*/ jsx_runtime_.jsx("a", {
                                         href: `https://www.${platform}.com`,
                                         target: "_blank",
                                         rel: "noopener noreferrer",
+                                        style: {
+                                            color: "#cccccc"
+                                        },
                                         children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
-                                            className: `fab fa-${platform} ${(Footer_module_default()).socialIcon}`
+                                            className: `fab fa-${platform}`
                                         })
-                                    }, platform))
+                                    }, index))
                             })
                         ]
                     })
                 ]
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                className: (Footer_module_default()).buttonWrapper,
-                children: /*#__PURE__*/ jsx_runtime_.jsx("button", {
-                    className: `btn btn-primary ${(Footer_module_default()).loginButton}`,
-                    onClick: toggleLoginPopup,
-                    children: "Open Login"
+                style: {
+                    color: "#cccccc",
+                    marginBottom: "10px"
+                },
+                children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                    style: {
+                        marginBottom: "-50px"
+                    }
                 })
             }),
-            isLoginOpen && /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                className: (Footer_module_default()).loginPopup,
-                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                    className: (Footer_module_default()).loginPopupContent,
-                    children: [
-                        /*#__PURE__*/ jsx_runtime_.jsx("h3", {
-                            children: "Login"
-                        }),
-                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("form", {
-                            children: [
-                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                    className: "form-group",
-                                    children: [
-                                        /*#__PURE__*/ jsx_runtime_.jsx("label", {
-                                            children: "Email:"
-                                        }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx("input", {
-                                            type: "email",
-                                            className: "form-control",
-                                            required: true
-                                        })
-                                    ]
-                                }),
-                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                    className: "form-group",
-                                    children: [
-                                        /*#__PURE__*/ jsx_runtime_.jsx("label", {
-                                            children: "Password:"
-                                        }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx("input", {
-                                            type: "password",
-                                            className: "form-control",
-                                            required: true
-                                        })
-                                    ]
-                                }),
-                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                    className: "form-actions",
-                                    children: [
-                                        /*#__PURE__*/ jsx_runtime_.jsx("button", {
-                                            type: "submit",
-                                            className: "btn btn-success",
-                                            children: "Login"
-                                        }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx("button", {
-                                            type: "button",
-                                            className: "btn btn-danger",
-                                            onClick: toggleLoginPopup,
-                                            children: "Cancel"
-                                        })
-                                    ]
-                                })
-                            ]
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                style: {
+                    marginTop: "20px",
+                    color: "#cccccc"
+                },
+                children: [
+                    /*#__PURE__*/ jsx_runtime_.jsx("h3", {
+                        style: {
+                            color: "white"
+                        },
+                        children: "LISTEN TO OUR PODCAST"
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("button", {
+                        style: {
+                            backgroundColor: "#333",
+                            color: "#cccccc",
+                            padding: "10px 20px",
+                            border: "none",
+                            borderRadius: "5px",
+                            margin: "10px"
+                        },
+                        children: "Listen on your Favorite Platform"
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("h3", {
+                        style: {
+                            marginTop: "20px",
+                            color: "white"
+                        },
+                        children: "Download Our App"
+                    }),
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                src: "/assets/img/goog.jpg",
+                                alt: "App Store",
+                                style: {
+                                    width: "120px",
+                                    margin: "10px"
+                                }
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                src: "/assets/img/app.jpg",
+                                alt: "Google Play",
+                                style: {
+                                    width: "120px",
+                                    margin: "10px"
+                                }
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        style: {
+                            marginTop: "20px"
+                        },
+                        children: /*#__PURE__*/ jsx_runtime_.jsx("button", {
+                            style: {
+                                backgroundColor: "#333",
+                                color: "#cccccc",
+                                padding: "10px 20px",
+                                border: "none",
+                                borderRadius: "5px"
+                            },
+                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+                                style: {
+                                    color: "white"
+                                },
+                                children: [
+                                    "  ",
+                                    /*#__PURE__*/ jsx_runtime_.jsx("i", {
+                                        className: "bi bi-whatsapp",
+                                        style: {
+                                            fontSize: "1.5em",
+                                            verticalAlign: "middle"
+                                        }
+                                    }),
+                                    " Chat with us on Whatsapp "
+                                ]
+                            })
                         })
-                    ]
-                })
+                    }),
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        style: {
+                            marginTop: "40px"
+                        },
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx("h3", {
+                                style: {
+                                    color: "white",
+                                    margin: "20px"
+                                },
+                                children: "JOIN OUR NEWSLETTER"
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx("input", {
+                                type: "email",
+                                placeholder: "Your email address",
+                                style: {
+                                    padding: "8px",
+                                    width: "200px",
+                                    borderRadius: "5px",
+                                    marginRight: "10px",
+                                    border: "1px solid #cccccc"
+                                }
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx("button", {
+                                style: {
+                                    backgroundColor: "#333",
+                                    color: "#cccccc",
+                                    padding: "8px 20px",
+                                    border: "none",
+                                    borderRadius: "5px"
+                                },
+                                children: "Subscribe"
+                            })
+                        ]
+                    })
+                ]
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                className: (Footer_module_default()).footerBottom,
+                style: {
+                    marginTop: "40px",
+                    color: "#777",
+                    fontSize: "0.9em"
+                },
                 children: /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                    className: (Footer_module_default()).whiteBorder,
+                    style: {
+                        color: "white"
+                    },
                     children: "\xa9 AlFurqanAcademy Network Inc. | Privacy Policy | Terms of Service"
                 })
             })
@@ -1427,19 +1482,19 @@ const Menus_DaskTopMenusMenus = ()=>{
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("li", {
                                 children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                                    href: "/blog",
+                                    href: "/blog-2column",
                                     children: "Blog"
                                 })
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("li", {
                                 children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                                    href: "/teachers",
+                                    href: "/team",
                                     children: "Teachers"
                                 })
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("li", {
                                 children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                                    href: "/testimonials",
+                                    href: "/testimonial",
                                     children: "Testimonials"
                                 })
                             }),
@@ -1467,11 +1522,14 @@ const Menus_DaskTopMenusMenus = ()=>{
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("li", {
                 className: "nav-item",
-                children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
                     href: "tel:+1234567890",
-                    children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
-                        className: "fas fa-phone"
-                    })
+                    children: [
+                        /*#__PURE__*/ jsx_runtime_.jsx("i", {
+                            className: "fas fa-phone"
+                        }),
+                        " +44 20 4577 1227"
+                    ]
                 })
             })
         ]
@@ -1550,13 +1608,22 @@ const DefaultHeader = ()=>{
 };
 /* harmony default export */ const header_DefaultHeader = ((/* unused pure expression or super */ null && (DefaultHeader)));
 
+// EXTERNAL MODULE: ./src/layout/header/Header2.module.css
+var Header2_module = __webpack_require__(230);
+var Header2_module_default = /*#__PURE__*/__webpack_require__.n(Header2_module);
 ;// CONCATENATED MODULE: ./src/layout/header/Header2.js
 
 
 
 
+ // import your CSS module
 const Header2 = ()=>{
+    const [isLoginOpen, setIsLoginOpen] = (0,external_react_.useState)(false);
     const [toggle, setToggle] = (0,external_react_.useState)(false);
+    // Toggle Login Popup directly
+    const toggleLoginPopup = ()=>{
+        setIsLoginOpen(!isLoginOpen);
+    };
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_.Fragment, {
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx("div", {
@@ -1572,60 +1639,134 @@ const Header2 = ()=>{
                                     className: "header_top_menu_address"
                                 })
                             }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                 className: "col-lg-4 col-sm-4 pr-0",
-                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                    className: "header_top_menu_icon text-right",
-                                    children: [
-                                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                            className: "menu-title",
-                                            children: /*#__PURE__*/ jsx_runtime_.jsx("h6", {
-                                                children: "FOLLOW US"
+                                children: [
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: "header_top_menu_icon text-right",
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: "menu-title",
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx("h6", {
+                                                    children: "FOLLOW US"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: "header_top_menu_icon_inner",
+                                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
+                                                    children: [
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                            children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                                href: "#",
+                                                                children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
+                                                                    className: "bi bi-facebook"
+                                                                })
+                                                            })
+                                                        }),
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                            className: "menu-icon",
+                                                            children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                                href: "#",
+                                                                children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
+                                                                    className: "bi bi-youtube"
+                                                                })
+                                                            })
+                                                        }),
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                            children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                                href: "#",
+                                                                children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
+                                                                    className: "bi bi-whatsapp"
+                                                                })
+                                                            })
+                                                        }),
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                            className: "menu-icon",
+                                                            children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                                href: "#",
+                                                                children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
+                                                                    className: "bi bi-instagram"
+                                                                })
+                                                            })
+                                                        }),
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                            className: "col-lg-4 col-sm-4 pr-0 text-right",
+                                                            children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
+                                                                className: "bi bi-chevron-down",
+                                                                onClick: toggleLoginPopup,
+                                                                style: {
+                                                                    cursor: "pointer",
+                                                                    fontSize: "20px",
+                                                                    color: "#fff"
+                                                                }
+                                                            })
+                                                        })
+                                                    ]
+                                                })
                                             })
-                                        }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                            className: "header_top_menu_icon_inner",
-                                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
-                                                children: [
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                        children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                            href: "#",
-                                                            children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
-                                                                className: "bi bi-facebook"
-                                                            })
+                                        ]
+                                    }),
+                                    isLoginOpen && /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: (Header2_module_default()).loginPopup,
+                                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                            className: (Header2_module_default()).loginPopupContent,
+                                            children: [
+                                                /*#__PURE__*/ jsx_runtime_.jsx("h3", {
+                                                    children: "Login"
+                                                }),
+                                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("form", {
+                                                    className: "form",
+                                                    children: [
+                                                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                            className: "form-group",
+                                                            children: [
+                                                                /*#__PURE__*/ jsx_runtime_.jsx("label", {
+                                                                    className: "label",
+                                                                    children: "Email:"
+                                                                }),
+                                                                /*#__PURE__*/ jsx_runtime_.jsx("input", {
+                                                                    type: "email",
+                                                                    className: "form-control",
+                                                                    required: true
+                                                                })
+                                                            ]
+                                                        }),
+                                                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                            className: "form-group",
+                                                            children: [
+                                                                /*#__PURE__*/ jsx_runtime_.jsx("label", {
+                                                                    className: "label",
+                                                                    children: "Password:"
+                                                                }),
+                                                                /*#__PURE__*/ jsx_runtime_.jsx("input", {
+                                                                    type: "password",
+                                                                    className: "form-control",
+                                                                    required: true
+                                                                })
+                                                            ]
+                                                        }),
+                                                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                            className: "form-actions",
+                                                            children: [
+                                                                /*#__PURE__*/ jsx_runtime_.jsx("button", {
+                                                                    type: "submit",
+                                                                    className: "btn btn-success",
+                                                                    children: "Login"
+                                                                }),
+                                                                /*#__PURE__*/ jsx_runtime_.jsx("button", {
+                                                                    type: "button",
+                                                                    className: "btn btn-danger",
+                                                                    onClick: toggleLoginPopup,
+                                                                    children: "Cancel"
+                                                                })
+                                                            ]
                                                         })
-                                                    }),
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                        className: "menu-icon",
-                                                        children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                            href: "#",
-                                                            children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
-                                                                className: "bi bi-youtube"
-                                                            })
-                                                        })
-                                                    }),
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                        children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                            href: "#",
-                                                            children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
-                                                                className: "bi bi-whatsapp"
-                                                            })
-                                                        })
-                                                    }),
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                        className: "menu-icon",
-                                                        children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                            href: "#",
-                                                            children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
-                                                                className: "bi bi-instagram"
-                                                            })
-                                                        })
-                                                    })
-                                                ]
-                                            })
+                                                    ]
+                                                })
+                                            ]
                                         })
-                                    ]
-                                })
+                                    })
+                                ]
                             })
                         ]
                     })
@@ -1887,205 +2028,185 @@ const Header = ({ header  })=>{
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* unused harmony export MobileToggleMenu */
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9816);
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1664);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6689);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1664);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
 
 
 
-
-const MobileToggleMenu = ()=>{
-    const [isDropdownOpen, setIsDropdownOpen] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false); // For Discover dropdown
-    const [isMenuOpen, setIsMenuOpen] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false); // For mobile menu toggle
-    const handleMouseEnter = ()=>{
-        setIsDropdownOpen(true);
-    };
-    const handleMouseLeave = ()=>{
-        setIsDropdownOpen(false);
-    };
-    const handleMenuToggle = ()=>{
-        setIsMenuOpen(!isMenuOpen); // Toggle mobile menu
-    };
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-        className: "jsx-eb005f57ae5752e8" + " " + "mobile-menu",
-        children: [
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                onClick: handleMenuToggle,
-                className: "jsx-eb005f57ae5752e8" + " " + "menu-toggle",
-                children: isMenuOpen ? "X" : /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
-                    className: "jsx-eb005f57ae5752e8" + " " + "menu-bars",
+const MobileMenu = ()=>{
+    const [toggle, setToggle] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false);
+    const [activeMenu, setActiveMenu] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)("");
+    const [subMenus, setSubMenus] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)("");
+    const activeMenuSet = (value)=>setActiveMenu(activeMenu === value ? "" : value), activeBtn = (value)=>value === activeMenu ? "-" : "+", activeLi = (value)=>value === activeMenu ? {
+            display: "block"
+        } : {
+            display: "none"
+        }, setSub = (value, motherMenu)=>motherMenu === activeMenu && value == subMenus ? setSubMenus("") : setSubMenus(value), activeSub = (value)=>value === subMenus ? {
+            display: "block"
+        } : {
+            display: "none"
+        };
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+        className: "mobile-menu-area d-sm-block d-md-block d-lg-none header____",
+        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+            className: "mobile-menu mean-container",
+            children: [
+                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                    className: "mean-bar",
                     children: [
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                            className: "jsx-eb005f57ae5752e8"
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                            href: "#nav",
+                            className: `meanmenu-reveal ${toggle ? "meanclose" : ""}`,
+                            onClick: ()=>setToggle(!toggle),
+                            children: toggle ? "X" : /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {}),
+                                    " ",
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {}),
+                                    " ",
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {})
+                                ]
+                            })
                         }),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                            className: "jsx-eb005f57ae5752e8"
-                        }),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                            className: "jsx-eb005f57ae5752e8"
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("nav", {
+                            className: "mean-nav",
+                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
+                                className: "nav_scroll",
+                                style: {
+                                    display: toggle ? "block" : "none"
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
+                                        children: [
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                href: "/",
+                                                children: "Home "
+                                            }),
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("ul", {
+                                                className: "sub-menu",
+                                                style: activeLi("Home")
+                                            })
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                        className: "mean-last",
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
+                                            legacyBehavior: true,
+                                            href: "/course",
+                                            children: "Course"
+                                        })
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                        className: "mean-last",
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
+                                            legacyBehavior: true,
+                                            href: "/pricing",
+                                            children: "Pricing"
+                                        })
+                                    }),
+                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
+                                        children: [
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                href: "#",
+                                                children: "Discover "
+                                            }),
+                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
+                                                className: "sub-menu",
+                                                style: activeLi("Company"),
+                                                children: [
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
+                                                            legacyBehavior: true,
+                                                            href: "about",
+                                                            children: "About Us"
+                                                        })
+                                                    }),
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
+                                                            legacyBehavior: true,
+                                                            href: "blog2-column",
+                                                            children: "Blog"
+                                                        })
+                                                    }),
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
+                                                            legacyBehavior: true,
+                                                            href: "",
+                                                            children: "Teachers"
+                                                        })
+                                                    }),
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
+                                                            legacyBehavior: true,
+                                                            href: "",
+                                                            children: "Testimonials"
+                                                        })
+                                                    }),
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
+                                                            legacyBehavior: true,
+                                                            href: "",
+                                                            children: "Career"
+                                                        })
+                                                    }),
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
+                                                            legacyBehavior: true,
+                                                            href: "",
+                                                            children: "Faq"
+                                                        })
+                                                    }),
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
+                                                            legacyBehavior: true,
+                                                            href: "contact",
+                                                            children: "Contact Us"
+                                                        })
+                                                    })
+                                                ]
+                                            }),
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                className: "mean-expand",
+                                                href: "#",
+                                                onClick: ()=>activeMenuSet("Company"),
+                                                style: {
+                                                    fontSize: 18
+                                                },
+                                                children: activeBtn("Company")
+                                            })
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
+                                            legacyBehavior: true,
+                                            href: "contact",
+                                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
+                                                children: [
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
+                                                        className: "fas fa-phone"
+                                                    }),
+                                                    " +44 20 4577 1227"
+                                                ]
+                                            })
+                                        })
+                                    })
+                                ]
+                            })
                         })
                     ]
+                }),
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                    className: "mean-push"
                 })
-            }),
-            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
-                style: {
-                    display: isMenuOpen ? "block" : "none"
-                },
-                className: "jsx-eb005f57ae5752e8" + " " + "nav_scroll text-center",
-                children: [
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        className: "jsx-eb005f57ae5752e8" + " " + "logo",
-                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_3___default()), {
-                            legacyBehavior: true,
-                            href: "/",
-                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                title: "Al",
-                                className: "jsx-eb005f57ae5752e8" + " " + "logo_img",
-                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                    src: "assets/images/logo.png",
-                                    alt: "logo",
-                                    height: 50,
-                                    className: "jsx-eb005f57ae5752e8"
-                                })
-                            })
-                        })
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        className: "jsx-eb005f57ae5752e8" + " " + "search-bar",
-                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("form", {
-                            className: "jsx-eb005f57ae5752e8",
-                            children: [
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("input", {
-                                    type: "text",
-                                    placeholder: "Search...",
-                                    style: {
-                                        height: "20px"
-                                    },
-                                    className: "jsx-eb005f57ae5752e8"
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
-                                    type: "submit",
-                                    className: "jsx-eb005f57ae5752e8",
-                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
-                                        className: "jsx-eb005f57ae5752e8" + " " + "fas fa-search"
-                                    })
-                                })
-                            ]
-                        })
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                        className: "jsx-eb005f57ae5752e8" + " " + "menu-item",
-                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                            href: "#",
-                            className: "jsx-eb005f57ae5752e8",
-                            children: "Courses"
-                        })
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                        className: "jsx-eb005f57ae5752e8" + " " + "menu-item",
-                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_3___default()), {
-                            legacyBehavior: true,
-                            href: "/pricing",
-                            children: "Pricing"
-                        })
-                    }),
-                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
-                        onMouseEnter: handleMouseEnter,
-                        onMouseLeave: handleMouseLeave,
-                        className: "jsx-eb005f57ae5752e8" + " " + "menu-item dropdown",
-                        children: [
-                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
-                                href: "#",
-                                className: "jsx-eb005f57ae5752e8",
-                                children: [
-                                    "Discover",
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                        className: "jsx-eb005f57ae5752e8",
-                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
-                                            className: "jsx-eb005f57ae5752e8" + " " + "fas fa-angle-down"
-                                        })
-                                    })
-                                ]
-                            }),
-                            isDropdownOpen && /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
-                                className: "jsx-eb005f57ae5752e8" + " " + "dropdown-menu",
-                                children: [
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                        className: "jsx-eb005f57ae5752e8",
-                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                            href: "#",
-                                            className: "jsx-eb005f57ae5752e8",
-                                            children: "About us"
-                                        })
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                        className: "jsx-eb005f57ae5752e8",
-                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                            href: "#",
-                                            className: "jsx-eb005f57ae5752e8",
-                                            children: "Blog"
-                                        })
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                        className: "jsx-eb005f57ae5752e8",
-                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                            href: "#",
-                                            className: "jsx-eb005f57ae5752e8",
-                                            children: "Teachers"
-                                        })
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                        className: "jsx-eb005f57ae5752e8",
-                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                            href: "#",
-                                            className: "jsx-eb005f57ae5752e8",
-                                            children: "Testimonials"
-                                        })
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                        className: "jsx-eb005f57ae5752e8",
-                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                            href: "#",
-                                            className: "jsx-eb005f57ae5752e8",
-                                            children: "Career"
-                                        })
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                        className: "jsx-eb005f57ae5752e8",
-                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                            href: "#",
-                                            className: "jsx-eb005f57ae5752e8",
-                                            children: "FAQ"
-                                        })
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                        className: "jsx-eb005f57ae5752e8",
-                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                            href: "#",
-                                            className: "jsx-eb005f57ae5752e8",
-                                            children: "Contact Us"
-                                        })
-                                    })
-                                ]
-                            })
-                        ]
-                    })
-                ]
-            }),
-            react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default()), {
-                id: "eb005f57ae5752e8",
-                children: '.menu-toggle.jsx-eb005f57ae5752e8{cursor:pointer;font-size:24px;display:none}.a.jsx-eb005f57ae5752e8,i.jsx-eb005f57ae5752e8,cite.jsx-eb005f57ae5752e8,var.jsx-eb005f57ae5752e8,address.jsx-eb005f57ae5752e8,dfn.jsx-eb005f57ae5752e8,ol.jsx-eb005f57ae5752e8,li.jsx-eb005f57ae5752e8,ul.jsx-eb005f57ae5752e8{text-align:left}.menu-item.jsx-eb005f57ae5752e8{border:1px solid#ccc;-webkit-border-radius:0px;-moz-border-radius:0px;border-radius:0px;padding:10px 20px;margin:0px;width:auto;background-color:#f8f8f8;-webkit-transition:background-color.3s ease,box-shadow.3s ease;-moz-transition:background-color.3s ease,box-shadow.3s ease;-o-transition:background-color.3s ease,box-shadow.3s ease;transition:background-color.3s ease,box-shadow.3s ease}.fa-angle-down.jsx-eb005f57ae5752e8:before{margin-left:206px;content:""}.menu-item.jsx-eb005f57ae5752e8 a.jsx-eb005f57ae5752e8{text-decoration:none;color:#333;font-weight:500;font-size:16px}.menu-item.jsx-eb005f57ae5752e8:hover{background-color:#eaeaea;-webkit-box-shadow:0 4px 8px rgba(0,0,0,.1);-moz-box-shadow:0 4px 8px rgba(0,0,0,.1);box-shadow:0 4px 8px rgba(0,0,0,.1)}.menu-item.jsx-eb005f57ae5752e8 a.jsx-eb005f57ae5752e8:hover{color:#007bff}.menu-bars.jsx-eb005f57ae5752e8{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:5px}.menu-bars.jsx-eb005f57ae5752e8 span.jsx-eb005f57ae5752e8{width:30px;height:3px;background-color:#333}@media(max-width:767px){.menu-toggle.jsx-eb005f57ae5752e8{display:block}.nav_scroll.jsx-eb005f57ae5752e8{display:none}.nav_scroll.text-center[style*="block"].jsx-eb005f57ae5752e8{display:block!important}}@media(min-width:768px){.menu-toggle.jsx-eb005f57ae5752e8{display:none}.nav_scroll.jsx-eb005f57ae5752e8{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex}}.dropdown-menu.jsx-eb005f57ae5752e8{display:none;position:absolute;background-color:#fff;-webkit-box-shadow:0 4px 8px rgba(0,0,0,.1);-moz-box-shadow:0 4px 8px rgba(0,0,0,.1);box-shadow:0 4px 8px rgba(0,0,0,.1);padding:10px;list-style:none}.dropdown.jsx-eb005f57ae5752e8:hover .dropdown-menu.jsx-eb005f57ae5752e8{display:block}.dropdown-menu.jsx-eb005f57ae5752e8 li.jsx-eb005f57ae5752e8{padding:5px 10px}.dropdown-menu.jsx-eb005f57ae5752e8 li.jsx-eb005f57ae5752e8 a.jsx-eb005f57ae5752e8{color:#333}.dropdown-menu.jsx-eb005f57ae5752e8 li.jsx-eb005f57ae5752e8 a.jsx-eb005f57ae5752e8:hover{color:#007bff}'
-            })
-        ]
+            ]
+        })
     });
 };
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MobileToggleMenu);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MobileMenu);
 
 
 /***/ }),

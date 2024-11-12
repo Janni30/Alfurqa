@@ -19,7 +19,7 @@ const faqsData = [
   },
   {
     id: 4,
-    title: "Where is the headquarter of your business?",
+    title: "Where is the headquarters of your business?",
     content: "Our headquarters are located in Coimbatore, India, but we operate globally.",
   },
 ];
@@ -31,22 +31,21 @@ const Faqs = () => {
       <Accordion
         defaultActiveKey={faqsData[0].id}
         as={"ul"}
-        className="accordion"
+        className="accord"
       >
         {faqsData.map((faq) => (
-          <li key={faq.id}>
+          <li key={faq.id} style={{ color: "black" }}>
             <Accordion.Toggle
               as="a"
               eventKey={faq.id}
-              onClick={() => setActive(faq.id == active ? null : faq.id)}
-              className={faq.id == active ? "active" : ""}
+              onClick={() => setActive(faq.id === active ? null : faq.id)}
+              className={faq.id === active ? "active" : ""}
+              style={{ color: "white" }}
             >
-              <span> {faq.title} </span>
+              <span style={{ color: "white" }}>{faq.title}</span>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey={faq.id}>
-              <p>
-              {faq.content}
-              </p>
+              <p style={{ color: "white" }}>{faq.content}</p>
             </Accordion.Collapse>
           </li>
         ))}
@@ -54,4 +53,5 @@ const Faqs = () => {
     </div>
   );
 };
+
 export default Faqs;

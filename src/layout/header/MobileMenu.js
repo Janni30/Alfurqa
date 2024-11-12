@@ -1,199 +1,104 @@
-import { useState } from "react";
 import Link from "next/link";
+import { Fragment, useState } from "react";
 
-export const MobileToggleMenu = () => {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false); // For Discover dropdown
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // For mobile menu toggle
-
-  const handleMouseEnter = () => {
-    setIsDropdownOpen(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsDropdownOpen(false);
-  };
-
-  const handleMenuToggle = () => {
-    setIsMenuOpen(!isMenuOpen); // Toggle mobile menu
-  };
-
+const MobileMenu = () => {
+  const [toggle, setToggle] = useState(false);
+  const [activeMenu, setActiveMenu] = useState("");
+  const [subMenus, setSubMenus] = useState("");
+  const activeMenuSet = (value) =>
+      setActiveMenu(activeMenu === value ? "" : value),
+    activeBtn = (value) => (value === activeMenu ? "-" : "+"),
+    activeLi = (value) =>
+      value === activeMenu ? { display: "block" } : { display: "none" },
+    setSub = (value, motherMenu) =>
+      motherMenu === activeMenu && value == subMenus
+        ? setSubMenus("")
+        : setSubMenus(value),
+    activeSub = (value) =>
+      value === subMenus ? { display: "block" } : { display: "none" };
   return (
-    <div className="mobile-menu">
-      {/* Toggle Button - Only visible on mobile */}
-      <div className="menu-toggle" onClick={handleMenuToggle}>
-        {isMenuOpen ? "X" : <span className="menu-bars"><span /><span /><span /></span>}
-      </div>
-
-      {/* Mobile Menu */}
-      <ul className="nav_scroll text-center" style={{ display: isMenuOpen ? "block" : "none" }}>
-        {/* Logo */}
-        <div className="logo">
-          <Link legacyBehavior href="/">
-            <a className="logo_img" title="Al">
-              <img src="assets/images/logo.png" alt="logo" height={50} />
-            </a>
-          </Link>
-        </div>
-
-        {/* Search Bar */}
-        <div className="search-bar">
-          <form>
-            <input type="text" placeholder="Search..." style={{ height: '20px' }} />
-            <button type="submit">
-              <i className="fas fa-search" />
-            </button>
-          </form>
-        </div>
-
-        {/* Courses Menu */}
-        <li className="menu-item">
-          <a href="#">Courses</a>
-        </li>
-
-        {/* Pricing Menu */}
-        <li className="menu-item">
-          <Link legacyBehavior href="/pricing">
-            Pricing
-          </Link>
-        </li>
-
-        {/* Discover Menu with Dropdown on Hover */}
-        <li
-          className="menu-item dropdown"
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
-          <a href="#">
-            Discover
-            <span>
-              <i className="fas fa-angle-down" />
-            </span>
+    <div className="mobile-menu-area d-sm-block d-md-block d-lg-none header____">
+      <div className="mobile-menu mean-container">
+        <div className="mean-bar">
+          <a
+            href="#nav"
+            className={`meanmenu-reveal ${toggle ? "meanclose" : ""}`}
+            onClick={() => setToggle(!toggle)}
+          >
+            {toggle ? (
+              "X"
+            ) : (
+              <Fragment>
+                <span /> <span /> <span />
+              </Fragment>
+            )}
           </a>
-
-          {/* Dropdown Menu */}
-          {isDropdownOpen && (
-            <ul className="dropdown-menu">
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Teachers</a></li>
-              <li><a href="#">Testimonials</a></li>
-              <li><a href="#">Career</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Contact Us</a></li>
+          <nav className="mean-nav">
+            <ul
+              className="nav_scroll"
+              style={{ display: toggle ? "block" : "none" }}
+            >
+              <li>
+                <a href="/">Home </a>
+                <ul className="sub-menu" style={activeLi("Home")}>
+                  {/* Add submenu items here if needed */}
+                </ul>
+                
+              </li>
+              <li className="mean-last">
+                <Link legacyBehavior href="/course">Course</Link>
+              </li>
+              <li className="mean-last">
+                <Link legacyBehavior href="/pricing">Pricing</Link>
+              </li>
+              <li>
+                <a href="#">Discover </a>
+                <ul className="sub-menu" style={activeLi("Company")}>
+                  <li>
+                    <Link legacyBehavior href="about">About Us</Link>
+                  </li>
+                  <li>
+                    <Link legacyBehavior href="blog2-column">Blog</Link>
+                  </li>
+                  <li>
+                    <Link legacyBehavior href="">Teachers</Link>
+                  </li>
+                  <li>
+                    <Link legacyBehavior href="">Testimonials</Link>
+                  </li>
+                  <li>
+                    <Link legacyBehavior href="">Career</Link>
+                  </li>
+                  <li>
+                    <Link legacyBehavior href="">Faq</Link>
+                  </li>
+                  <li>
+                    <Link legacyBehavior href="contact">Contact Us</Link>
+                  </li>
+                </ul>
+                <a
+                  className="mean-expand"
+                  href="#"
+                  onClick={() => activeMenuSet("Company")}
+                  style={{ fontSize: 18 }}
+                >
+                  {activeBtn("Company")}
+                </a>
+              </li>
+              <li >
+                <Link legacyBehavior href="contact">
+                  <span>
+                    <i className="fas fa-phone" /> +44 20 4577 1227
+                  </span>
+                </Link>
+              </li>
             </ul>
-          )}
-        </li>
-      </ul>
-
-      {/* Internal CSS */}
-      <style jsx>{`
-        /* Mobile toggle styling */
-        .menu-toggle {
-          cursor: pointer;
-          font-size: 24px;
-          display: none; /* Initially hidden */
-        }
-       
-       .a, i, cite, var, address, dfn, ol, li, ul {
-       text-align: left;
-         }
-        .menu-item {
-          border: 1px solid #ccc;
-          border-radius: 0px;
-          padding: 10px 20px;
-          margin: 0px;
-          width: auto;
-          background-color: #f8f8f8;
-          transition: background-color 0.3s ease, box-shadow 0.3s ease;
-        }
-          .fa-angle-down:before {
-    margin-left: 206px;
-    content: "\f107";
-}
-        .menu-item a {
-          text-decoration: none;
-          color: #333;
-          font-weight: 500;
-          font-size: 16px;
-        }
-
-        .menu-item:hover {
-          background-color: #eaeaea;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .menu-item a:hover {
-          color: #007bff;
-        }
-
-        /* Mobile menu bars */
-        .menu-bars {
-          display: flex;
-          flex-direction: column;
-          gap: 5px;
-        }
-
-        .menu-bars span {
-          width: 30px;
-          height: 3px;
-          background-color: #333;
-        }
-
-        /* Show mobile menu toggle only on small screens (max-width: 767px) */
-        @media (max-width: 767px) {
-          .menu-toggle {
-            display: block; /* Visible on mobile */
-          }
-
-          /* Ensure mobile menu shows on mobile view */
-          .nav_scroll {
-            display: none; /* Hide menu by default */
-          }
-
-          .nav_scroll.text-center[style*="block"] {
-            display: block !important;
-          }
-        }
-
-        /* Hide the toggle and show regular menu on larger screens */
-        @media (min-width: 768px) {
-          .menu-toggle {
-            display: none;
-          }
-
-          .nav_scroll {
-            display: flex;
-          }
-        }
-
-        /* Dropdown styling */
-        .dropdown-menu {
-          display: none;
-          position: absolute;
-          background-color: #fff;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-          padding: 10px;
-          list-style: none;
-        }
-
-        .dropdown:hover .dropdown-menu {
-          display: block;
-        }
-
-        .dropdown-menu li {
-          padding: 5px 10px;
-        }
-
-        .dropdown-menu li a {
-          color: #333;
-        }
-
-        .dropdown-menu li a:hover {
-          color: #007bff;
-        }
-      `}</style>
+          </nav>
+        </div>
+        <div className="mean-push" />
+      </div>
     </div>
   );
 };
 
-export default MobileToggleMenu;
+export default MobileMenu;

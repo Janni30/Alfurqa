@@ -28,12 +28,12 @@
                       </li>
                       <li className="menu-icon">
                         <a href="#">
-                          <i className="bi bi-dribbble" />
+                          <i className="bi bi-youtube" />
                         </a>
                       </li>
                       <li>
                         <a href="#">
-                          <i className="bi bi-twitter" />
+                          <i className="bi bi-whatsapp" />
                         </a>
                       </li>
                       <li className="menu-icon">

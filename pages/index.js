@@ -3,7 +3,6 @@ import Layout from "@/src/layout/Layout";
 import { brandListProps, caseStudyProps } from "@/src/sliderProps";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Faqs from "@/src/components/Faqs";
 import {
   brandListProps2,
   heroSlider,
@@ -19,6 +18,7 @@ import Pprocess from "@/src/components/Pprocess";
 import Banner from "@/src/components/Banner";
 import BannerSlider from "@/src/components/BannerSlider";
 import TestimonialComponent from "@/src/components/TestimonialComponent";
+import Faqs from "@/src/components/Faqss";
 
 const Index = () => {
   return (
@@ -120,7 +120,7 @@ const Index = () => {
                     <img src="assets/img/art.png"  height={70}alt />
                   </div> */}
                   <div className="feature-title">
-                    <h3> Quran </h3>
+                    <h2> Quran </h2>
                   </div>
                   <div className="feature-text11">
                     <p>
@@ -169,7 +169,7 @@ const Index = () => {
                     <img src="assets/img/art.png"  height={70}alt />
                   </div> */}
                   <div className="feature-title0">
-                    <h3> Arabic </h3>
+                    <h2> Arabic </h2>
                   </div>
                   <div className="feature-text0">
                     <p>
@@ -218,7 +218,7 @@ const Index = () => {
                     <img src="assets/img/art.png"  height={70}alt />
                   </div> */}
                   <div className="feature-title1">
-                    <h3> Islamic Studies</h3>
+                    <h2> Islamic Studies</h2>
                   </div>
                   <div className="feature-text1">
                     <p>
@@ -260,7 +260,7 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            <div className="about-button " style={{marginLeft:'950px'}}>
+            <div className="about-button " style={{marginLeft:'900px'}}>
 
             <Link legacyBehavior href="/contact">
                   <a>
@@ -548,7 +548,7 @@ const Index = () => {
                         Online Portal   <span>access </span>
                       </h3>
                       <p>
-                      Provides live sessions, recorded lectures,  interactive materials, accessible learning experience.                      </p>                    </div>
+                      Provides live sessions, recorded lectures,  interactive materials, accessible learning experience.</p>    </div>
                   </div>
                 </div>
 
@@ -651,9 +651,18 @@ const Index = () => {
                     <li>
                       <i className="bi bi-arrow-right-circle" />{" "}
                       <span style={{color:'black'}}>Flexible Learning Options</span>
-                    </li>  <li>
+                    </li> 
+                     <li>
                       <i className="bi bi-arrow-right-circle" />{" "}
                       <span style={{color:'black'}}> Professionally grow cutting-edge paradigms </span>
+                    </li>
+                    <li>
+                      <i className="bi bi-arrow-right-circle" />{" "}
+                      <span style={{color:'black'}}> Enhance your learning with our adaptable schedules </span>
+                    </li>
+                    <li>
+                      <i className="bi bi-arrow-right-circle" />{" "}
+                      <span style={{color:'black'}}> Enabling professional growth in a supportive online environment </span>
                     </li>
                   </ul>
                 </div>
@@ -1107,88 +1116,7 @@ const Index = () => {
       {/* Start faq Area */}
       {/*==================================================*/}
       {/* <br/><br/><br/> */}
-      <div className="faq-area" data-aos="fade-up">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12 col-md-6 pl-0">
-              {/* Start Accordion */}
-              <div className="tab_container">
-                <div className="consen-section-title white pb-40 mb-1">
-                  <h5> FAQ </h5>
-                  <h2 className="text-black">
-                    {" "}
-                    Frequently Asked <span> Question </span>
-                  </h2>
-                </div>
-                <Faqs />
-              
-              </div>
-              {/* End Accordion */}
-            </div>
-              {/* <div className="col-lg-6 col-md-6">
-                <div className="contract-form-bg">
-                  <div className="contact-form-title">
-                    <h4> Free Consultant </h4>
-                    <p> 24/7 anytime Open Our Services </p>
-                  </div>
-                  <div className="contact_from">
-                    <form onSubmit={(e) => e.preventDefault()} id="dreamit-form">
-                      <div className="row">
-                        <div className="col-lg-12">
-                          <div className="form_box mb-20">
-                            <input type="text" name="name" placeholder="Name*" />
-                          </div>
-                        </div>
-                        <div className="col-lg-12">
-                          <div className="form_box mb-20">
-                            <input
-                              type="email"
-                              name="email"
-                              placeholder="Your E-Mail*"
-                            />
-                          </div>
-                        </div>
-                        <div className="col-lg-12">
-                          <div className="form_box mb-20">
-                            <input
-                              type="text"
-                              name="phone"
-                              placeholder="Phone Number"
-                            />
-                          </div>
-                        </div>
-                        <div className="col-lg-12">
-                          <div className="form_box mb-20">
-                            <textarea
-                              name="message"
-                              id="message"
-                              cols={30}
-                              rows={10}
-                              placeholder="Write a Message"
-                              defaultValue={""}
-                            />
-                          </div>
-                          <div className="quote_button">
-                            <button className="btn" type="submit">
-                              {" "}
-                              <i className="bi bi-gear" /> Free Consultant{" "}
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-                    <div id="status" />
-                  </div>
-                </div>
-              </div> */}
-            <div className="form-shape">
-              <div className="testi-shape-thumb">
-                <img src="assets/images/resource/all-shape5.png" alt />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    
 
 
       <div className="faq-sectiions" data-aos="fade-up">
@@ -1196,12 +1124,12 @@ const Index = () => {
           <div className="row">
             <div className="col-lg-6 col-md-12">
               <div className="consen-section-title white pb-1 mb-1">
-                <h5> process </h5>
-                <h2>
+                <h5 className="text-black"> process </h5>
+                <h2 style={{color:'black'}} >
                   {" "}
                   Freequently Asked <span> Question </span>
                 </h2>
-                <p className="study-text1">
+                <p className="study-text1" style={{color:'black'}}>
                   {" "}
                   Appropriately enhance principle-centered innovation rather
                   than high standards in platforms. Credibly orchestrate
@@ -1209,22 +1137,22 @@ const Index = () => {
                 </p>
               </div>
               <div className="dreamit-icon-list">
-                <ul>
+                <ul style={{color:'black'}}>
                   <li>
                     <i className="bi bi-arrow-right-circle" />{" "}
-                    <span> Communicate orthogonal process </span>
+                    <span style={{color:'black'}}> Communicate orthogonal process </span>
                   </li>
                   <li>
                     <i className="bi bi-arrow-right-circle" />{" "}
-                    <span> Professionally grow cutting-edge paradigms </span>
+                    <span style={{color:'black'}}> Professionally grow cutting-edge paradigms </span>
                   </li>
                   <li>
                     <i className="bi bi-arrow-right-circle" />{" "}
-                    <span> Communicate orthogonal process </span>
+                    <span style={{color:'black'}}> Communicate orthogonal process </span>
                   </li>
                   <li>
                     <i className="bi bi-arrow-right-circle" />{" "}
-                    <span> Professionally grow cutting-edge paradigms </span>
+                    <span style={{color:'black'}}> Professionally grow cutting-edge paradigms </span>
                   </li>
                 </ul>
               </div>
@@ -1232,7 +1160,7 @@ const Index = () => {
                 <Link legacyBehavior href="/about">
                   <a>
                     {" "}
-                    <i className="bi bi-gear" /> More About{" "}
+                   More About{" "} <i className="bi bi-plus" /> 
                   </a>
                 </Link>
               </div>
@@ -1240,6 +1168,35 @@ const Index = () => {
             <div className="col-lg-6 col-md-12 pl-0">
               {/* Start Accordion */}
               <div className="tab_container pl-30 pt-20">
+              <div
+                className="accordion"
+                style={{
+                  listStyle: "none",
+                  margin: 0,
+                  padding: 0,
+                }}
+              >
+                <ul>
+                  <li>
+                    <a
+                      href="#"
+                      style={{
+                        padding: "16px 20px 16px 30px",
+                        borderRadius: "0",
+                        backgroundColor: "#1f2932",
+                        border: "none",
+                        color: "white",
+                        textDecoration: "none",
+                        display: "block",
+                      }}
+                    >
+                      More Faqs
+                    </a>
+                   
+                  </li>
+                  {/* Add more FAQ items as needed */}
+                </ul>
+              </div>
                 <Faqs />
               </div>
               {/* End Accordion */}

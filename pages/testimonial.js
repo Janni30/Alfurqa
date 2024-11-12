@@ -1,211 +1,148 @@
 import Breadcumb from "@/src/components/Breadcumb";
 import Layout from "@/src/layout/Layout";
+import Image from 'next/image';
+
 const Testimonial = () => {
   return (
     <Layout>
       <Breadcumb pageName={"Testimonial"} />
       {/*==================================================*/}
       {/* Start consen Testimonial Area */}
+      <div className="testimonial-area new-style">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6">
+              <div className="consen-section-title pb-40">
+                <h5>TESTIMONIALS</h5>
+                <h2> What Say Students </h2>
+                <h2>
+                  {" "}
+                  About <span>AL Furqan</span>
+                </h2>
+              </div>
+              <div className="row">
+                <div className="testi_list owl-carousel">
+                  <div className="col-lg-12">
+                    <div className="single-testimonial">
+                      <div className="testimonial-icon-thumb">
+                        <img src="assets/images/resource/testi-icon.png" alt />
+                      </div>
+                      <div className="testimonial-ratting">
+                        <i className="fas fa-star" />
+                        <i className="fas fa-star" />
+                        <i className="fas fa-star" />
+                        <i className="fas fa-star" />
+                        <i className="far fa-star" />
+                      </div>
+                      <div className="testimonial-content">
+                        <div className="testimonial-text">
+                          <p>
+                            Proactively leverage existing robust imperatives
+                            standards compliant this paradigms. Competently
+                            formulate excellent experiences withoutlicks-and it
+                            mortar methodologies. Seamlessly enhance technically
+                            sound e-business tactical communities holisticly
+                            coordinate.
+                          </p>
+                        </div>
+                        <div className="testimonial-title">
+                          <h2>John M. Alexon</h2>
+                          <span>UX Designer</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6 h-full w-full">
+  <div className="testimonial-thumb relative h-full w-full">
+    {/* Video Container */}
+    <video
+      className="w-full h-full object-cover rounded-lg"
+      controls
+      autoPlay
+      muted
+      style={{ height: '50vh', width: '40vw', objectFit: 'cover' }} // Fullscreen video styles
+    >
+      <source src="/assets/videos/your-video.mp4" type="video/mp4" />
+    </video>
+
+    {/* Play Button Overlay */}
+    <div className="absolute inset-0 flex items-center justify-center">
+      <div className="bg-green-600 p-4 rounded-full opacity-75">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-10 w-10 text-white"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          {/* <path d="M3 22v-20l18 10-18 10z" /> */}
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+          </div>
+        </div>
+      </div>
+        <div className="container">
+          <br/>
+        <div className="bg-gray py-16 px-4 text-center text-#333333">
+      {/* Title Section */}
+      <h1 className="text-3xl font-bold mb-6" style={{color:'#333333',fontsize:'15px',textAlign:'center'}}>
+        I choose <span className="text-4xl mb-19" style={{color:'#F14D5D'}}>AL Furqan</span>
+      </h1> <br/>
+      <p className="text-gray-600 max-w-4xl mx-auto mb-15 " style={{fontSize:'16px',textAlign:'center',color:'#555555'}}>
+         I choose AL Furqan because it transforms the way I understand the Quran. Through engaging lessons and expert teachers, I’ve deepened my connection with the words of Allah. It’s not just learning—it's a journey of reflection, growth, and spiritual insight. With BAYYINAH, every verse opens a new door of understanding.
+      </p>
+
+      <div className="image-container">
+
+  <div className="bottom-images">
+    <Image src="/assets/img/course1a.png" alt="Bottom Image 1" width={320} height={320} className="rounded" style={{    marginLeft:'-6px'}} />
+    <Image src="/assets/img/course1a.png" alt="Bottom Image 2" width={320} height={320} className="rounded" style={{marginLeft:'306px'}} />
+  </div>
+    <div className="center-image">
+    <Image src="/assets/img/course1a.png" alt="Center Image" width={320} height={320} className="rounded" style={{marginLeft:'20px'}} />
+  </div>
+</div>
+
+    </div>
+        </div>
+     
+
+
+
       {/*==================================================*/}
-      <div className="testimonial-area style-two">
+      {/* <div className="testimonial-area style-two">
         <div className="container">
           <div className="row testi-rotate align-items-center">
             <div className="col-lg-12">
               <div className="consen-section-title pb-50 text-center upper">
                 <h5> Testimonials </h5>
-                <h2> Consen Trusted Customers </h2>
+                <h2>  Trusted Customers </h2>
                 <h2>
                   {" "}
                   Awesome <span> Reviews </span>
                 </h2>
+                
               </div>
             </div>
           </div>
-          <div className="row">
-            <div className="col-lg-4 col-md-6">
-              <div className="testimonial-single-box">
-                <div className="testimonial-content1">
-                  <div className="single-quote-icon">
-                    <div className="quote-thumb">
-                      <img src="assets/images/resource/testi1.png" alt />
-                    </div>
-                    <div className="quote-title">
-                      <h4>Philip Anthorpy</h4>
-                      <p>UI Designer</p>
-                    </div>
-                  </div>
-                  <div className="em-testimonial-text">
-                    <p>
-                      “Holisticly pursue market-more synerg through innovative
-                      paradi. Enthusia productivate media”.
-                    </p>
-                  </div>
-                  <div className="em-testi-start-icon">
-                    <i className="bi bi-star-fill" />
-                    <i className="bi bi-star-fill" />
-                    <i className="bi bi-star-fill" />
-                    <i className="bi bi-star-fill" />
-                    <i className="bi bi-star-half" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="testimonial-single-box">
-                <div className="testimonial-content1">
-                  <div className="single-quote-icon">
-                    <div className="quote-thumb">
-                      <img src="assets/images/resource/testi3.png" alt />
-                    </div>
-                    <div className="quote-title">
-                      <h4> Shilpa Shethy </h4>
-                      <p> CEO, Founder </p>
-                    </div>
-                  </div>
-                  <div className="em-testimonial-text">
-                    <p>
-                      “Holisticly pursue market-more synerg through innovative
-                      paradi. Enthusia productivate media”.
-                    </p>
-                  </div>
-                  <div className="em-testi-start-icon">
-                    <i className="bi bi-star-fill" />
-                    <i className="bi bi-star-fill" />
-                    <i className="bi bi-star-fill" />
-                    <i className="bi bi-star-fill" />
-                    <i className="bi bi-star-half" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="testimonial-single-box">
-                <div className="testimonial-content1">
-                  <div className="single-quote-icon">
-                    <div className="quote-thumb">
-                      <img src="assets/images/resource/testi2.png" alt />
-                    </div>
-                    <div className="quote-title">
-                      <h4> David Alexon </h4>
-                      <p> MH Manager </p>
-                    </div>
-                  </div>
-                  <div className="em-testimonial-text">
-                    <p>
-                      “Holisticly pursue market-more synerg through innovative
-                      paradi. Enthusia productivate media”.
-                    </p>
-                  </div>
-                  <div className="em-testi-start-icon">
-                    <i className="bi bi-star-fill" />
-                    <i className="bi bi-star-fill" />
-                    <i className="bi bi-star-fill" />
-                    <i className="bi bi-star-fill" />
-                    <i className="bi bi-star-half" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="testimonial-single-box">
-                <div className="testimonial-content1">
-                  <div className="single-quote-icon">
-                    <div className="quote-thumb">
-                      <img src="assets/images/resource/testi3.png" alt />
-                    </div>
-                    <div className="quote-title">
-                      <h4> Shilpa Shethy </h4>
-                      <p> CEO, Founder </p>
-                    </div>
-                  </div>
-                  <div className="em-testimonial-text">
-                    <p>
-                      “Holisticly pursue market-more synerg through innovative
-                      paradi. Enthusia productivate media”.
-                    </p>
-                  </div>
-                  <div className="em-testi-start-icon">
-                    <i className="bi bi-star-fill" />
-                    <i className="bi bi-star-fill" />
-                    <i className="bi bi-star-fill" />
-                    <i className="bi bi-star-fill" />
-                    <i className="bi bi-star-half" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="testimonial-single-box">
-                <div className="testimonial-content1">
-                  <div className="single-quote-icon">
-                    <div className="quote-thumb">
-                      <img src="assets/images/resource/testi2.png" alt />
-                    </div>
-                    <div className="quote-title">
-                      <h4> David Alexon </h4>
-                      <p> MH Manager </p>
-                    </div>
-                  </div>
-                  <div className="em-testimonial-text">
-                    <p>
-                      “Holisticly pursue market-more synerg through innovative
-                      paradi. Enthusia productivate media”.
-                    </p>
-                  </div>
-                  <div className="em-testi-start-icon">
-                    <i className="bi bi-star-fill" />
-                    <i className="bi bi-star-fill" />
-                    <i className="bi bi-star-fill" />
-                    <i className="bi bi-star-fill" />
-                    <i className="bi bi-star-half" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="testimonial-single-box">
-                <div className="testimonial-content1">
-                  <div className="single-quote-icon">
-                    <div className="quote-thumb">
-                      <img src="assets/images/resource/testi1.png" alt />
-                    </div>
-                    <div className="quote-title">
-                      <h4>Philip Anthorpy</h4>
-                      <p>UI Designer</p>
-                    </div>
-                  </div>
-                  <div className="em-testimonial-text">
-                    <p>
-                      “Holisticly pursue market-more synerg through innovative
-                      paradi. Enthusia productivate media”.
-                    </p>
-                  </div>
-                  <div className="em-testi-start-icon">
-                    <i className="bi bi-star-fill" />
-                    <i className="bi bi-star-fill" />
-                    <i className="bi bi-star-fill" />
-                    <i className="bi bi-star-fill" />
-                    <i className="bi bi-star-half" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* testi shape */}
-            <div className="testi-shape">
-              <div className="testi-shape-thumb">
-                <img src="assets/images/resource/all-shape5.png" alt />
-              </div>
-            </div>
-          </div>
+    
         </div>
-      </div>
+      </div> */}
       {/*==================================================*/}
       {/* End consen Testimonial Area */}
       {/*==================================================*/}
       {/*==================================================*/}
       {/* Start consen Subscribe Area */}
       {/*==================================================*/}
-      <div className="subscribe-area style-two mt-5 mt-sm-0">
+      {/* <div className="subscribe-area style-two mt-5 mt-sm-0">
         <div className="container">
           <div className="subscribe">
             <div className="row align-items-center">
@@ -226,7 +163,10 @@ const Testimonial = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+
+
+      
     </Layout>
   );
 };
